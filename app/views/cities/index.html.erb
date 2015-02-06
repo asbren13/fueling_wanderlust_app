@@ -1,9 +1,8 @@
 <h1>List of Current Cities</h1>
-<ul>
-    <li>
-      <% @cities.each do |city| %>
-        <%= city.city_name %>
-        <%= city.city_name %>
-      <% end %>
-    </li>
+
+
+<ul class="cities">
+  <% @cities.each do |city| %>
+    <li> <%= link_to city.city_name, city %>, <%= city.country_name %></li>
+  <% end %>
 </ul>
