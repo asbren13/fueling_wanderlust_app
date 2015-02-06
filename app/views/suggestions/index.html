@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+<h1>Suggestions</h1>
+
+<% @suggestions.each do |suggestion| %>
+  <li><p><%= suggestion.name %>
+  <%= suggestion.ideas %></p></li>
+<% end %>

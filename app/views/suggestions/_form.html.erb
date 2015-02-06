@@ -1,0 +1,9 @@
+<h1>New Comment</h1>
+
+<%= form_for [@city, @suggestion] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :ideas %>
+  <%= f.text_area :ideas %>
+  <%= f.submit "Submit" %>
+<% end %>

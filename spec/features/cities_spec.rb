@@ -15,7 +15,7 @@ RSpec.feature 'Managing Cities' do
     visit "/cities/#{city.id}"
   end
 
-#Only I can be able to do this.
+#Only I can be able to do the below.
 #However, I want to make sure that it works.
   scenario 'Create a city' do
     visit '/cities/new'
