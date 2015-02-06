@@ -1,3 +1,5 @@
+# Fueling Wanderlust
+
 Description: Going on an exciting trip, but not sure what to do on one of the days? Visit this app and see a list of user moderated suggestions to get an idea of where to go! Recently got back from an awesome vacation and want to share some great places to go or things to see? Create an account and add a suggestion to the country/city where you were!
 
 Features
