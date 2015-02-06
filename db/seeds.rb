@@ -10,4 +10,4 @@ City.create!(city_name:'Copenhagen', country_name:'Denmark')
 City.create!(city_name:'Cortona', country_name:'Italy')
 City.create!(city_name:'Chiang Mai', country_name:'Thailand')
 City.create!(city_name:'Queensland', country_name:'Australia')
-
+City.create!(city_name:'Nairobi', country_name:'Kenya')
