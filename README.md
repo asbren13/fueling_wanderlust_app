@@ -7,3 +7,4 @@ Features:
 - Add a suggestion of things to do and places to see in a city!
 - View comments from other travelers for one of the suggestions!
 - Add your input to a suggestion in a comment!
+- See suggestions organized by categories!
