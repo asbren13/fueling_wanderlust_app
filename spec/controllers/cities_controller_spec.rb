@@ -97,4 +97,80 @@ RSpec.describe CitiesController do
       end
     end
   end
+
+  describe 'GET edit' do
+    it 'has a 200 status code' do
+      city = City.create!(valid_attributes)
+      get :edit, id: city
+      expect(response.status).to eq 200
+    end
+
+    it 'renders the edit template' do
+      city = City.create!(valid_attributes)
+      get :edit, id: city
+      expect(response).to render_template('edit')
+    end
+
+    it 'assigns @city' do
+      city = City.create!(valid_attributes)
+      get :edit, id: city
+      expect(assigns(:city)).to eq city
+    end
+  end
+
+  describe 'PATCH update' do
+    context 'with valid attributes' do
+      let(:new_attributes) {
+        { city_name: 'London', country_name: 'England' }
+      }
+
+      it 'updates the requested article' do
+        city = City.create!(valid_attributes)
+        patch :update, id: city, city: new_attributes
+        city.reload
+        expect(city.city_name).to eq new_attributes[:city_name]
+      end
+
+      it 'assigns @city' do
+        city = City.create!(valid_attributes)
+        patch :update, id: city, city: new_attributes
+        expect(assigns(:city)).to eq city
+      end
+
+      it 'redirects to the city' do
+        city = City.create!(valid_attributes)
+        patch :update, id: city, city: new_attributes
+        expect(response).to redirect_to city
+      end
+    end
+
+    context 'with invalid attributes' do
+      it 'assigns @city' do
+        city = City.create!(valid_attributes)
+        patch :update, id: city, city: invalid_attributes
+        expect(assigns(:city)).to eq city
+      end
+
+      it 're-renders the edit template' do
+        city = City.create!(valid_attributes)
+        patch :update, id: city, city: invalid_attributes
+        expect(response).to render_template('edit')
+      end
+    end
+  end
+
+  describe 'DELETE destroy' do
+    it 'destroys the requested city' do
+      city = City.create!(valid_attributes)
+      expect {
+        delete :destroy, id: city
+      }.to change(City, :count).by(-1)
+    end
+
+    it 'redirects to the cities list' do
+     city = City.create!(valid_attributes)
+      delete :destroy, id: city
+      expect(response).to redirect_to cities_url
+    end
+  end
 end

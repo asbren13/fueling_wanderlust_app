@@ -18,7 +18,6 @@ RSpec.feature 'Managing Cities' do
 #Only I can be able to do this.
 #However, I want to make sure that it works.
   scenario 'Create a city' do
-
     visit '/cities/new'
 
     fill_in 'City name', with: 'London'
@@ -28,5 +27,25 @@ RSpec.feature 'Managing Cities' do
     expect(page).to have_content('successfully')
   end
 
+  scenario 'Update a city' do
+    city = City.create!(city_name: 'Loundon', country_name: 'Enggland')
+    visit "/cities/#{city.id}/edit"
 
+    fill_in 'City name', with: 'London'
+    fill_in 'Country name', with: 'England'
+    click_on 'Update City'
+
+    expect(page).to have_content('successfully')
+    expect(page.find('h1')).to have_content 'London'
+    expect(page).to have_content 'England'
+  end
+
+  scenario 'Delete a city' do
+    city = City.create!(city_name: 'London', country_name: 'England')
+    visit "cities/#{city.id}/edit"
+
+    click_on 'Delete City'
+
+    expect(page).to have_content(/success/i)
+  end
 end

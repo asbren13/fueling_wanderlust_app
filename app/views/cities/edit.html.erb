@@ -1,3 +1,5 @@
 <h1>Editing a city?</h1>
 
 <%= render 'form' %>
+
+<%= button_to 'Delete City', city_path(@city), method: :delete, data: { confirm: 'Are you sure?' } %>
