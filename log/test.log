@@ -2546,3 +2546,552 @@ Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (566.3ms)[0m  [1mDROP DATABASE IF EXISTS "wdi_3_rails_hw_mp_todo_app_test"[0m
+  [1m[35m (611.3ms)[0m  CREATE DATABASE "wdi_3_rails_hw_mp_todo_app_test" ENCODING = 'unicode'
+  [1m[36m (36.5ms)[0m  [1mCREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (11.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (3.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (7.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (133.3ms)[0m  [1mDROP DATABASE IF EXISTS "project_one_test"[0m
+  [1m[35m (265.1ms)[0m  CREATE DATABASE "project_one_test" ENCODING = 'unicode'
+  [1m[36mSQL (2.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (41.2ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (7.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206152644')
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:15.922659"], ["updated_at", "2015-02-06 18:59:15.922659"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCity Load (0.9ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 4.7ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:15.950740"], ["updated_at", "2015-02-06 18:59:15.950740"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered cities/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:15.957066"], ["updated_at", "2015-02-06 18:59:15.957066"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered cities/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:15.981942"], ["updated_at", "2015-02-06 18:59:15.981942"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/cities/4
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:15.989174"], ["updated_at", "2015-02-06 18:59:15.989174"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/cities/5
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:15.999411"], ["updated_at", "2015-02-06 18:59:15.999411"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/cities/6
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+  [1m[35mCity Load (0.8ms)[0m  SELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>nil, "country_name"=>nil}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered cities/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 1.5ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>nil, "country_name"=>nil}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 18:59:16.031751"], ["updated_at", "2015-02-06 18:59:16.031751"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cities" for 127.0.0.1 at 2015-02-06 13:59:16 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 56ms (Views: 40.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 18:59:16.119777"], ["updated_at", "2015-02-06 18:59:16.119777"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cities/8" for 127.0.0.1 at 2015-02-06 13:59:16 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  Rendered cities/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-06 13:59:16 -0500
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (17.0ms)
+  Rendered cities/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+Started POST "/cities" for 127.0.0.1 at 2015-02-06 13:59:16 -0500
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "city"=>{"city_name"=>"London", "country_name"=>"England"}, "commit"=>"Create City"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "London"], ["country_name", "England"], ["created_at", "2015-02-06 18:59:16.181630"], ["updated_at", "2015-02-06 18:59:16.181630"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cities/9
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+Started GET "/cities/9" for 127.0.0.1 at 2015-02-06 13:59:16 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  Rendered cities/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 18:59:16.210130"], ["updated_at", "2015-02-06 18:59:16.210130"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.494381"], ["updated_at", "2015-02-06 19:01:13.494381"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mCity Load (0.6ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 11]]
+  Rendered cities/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 5.9ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.519603"], ["updated_at", "2015-02-06 19:01:13.519603"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered cities/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.527100"], ["updated_at", "2015-02-06 19:01:13.527100"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered cities/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.553111"], ["updated_at", "2015-02-06 19:01:13.553111"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/cities/14
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.561658"], ["updated_at", "2015-02-06 19:01:13.561658"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/cities/15
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.568438"], ["updated_at", "2015-02-06 19:01:13.568438"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/cities/16
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35mCity Load (0.6ms)[0m  SELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>nil, "country_name"=>nil}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>nil, "country_name"=>nil}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 19:01:13.593213"], ["updated_at", "2015-02-06 19:01:13.593213"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cities" for 127.0.0.1 at 2015-02-06 14:01:13 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 19:01:13.635419"], ["updated_at", "2015-02-06 19:01:13.635419"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cities/18" for 127.0.0.1 at 2015-02-06 14:01:13 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 18]]
+  Rendered cities/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-06 14:01:13 -0500
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (11.4ms)
+  Rendered cities/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+Started POST "/cities" for 127.0.0.1 at 2015-02-06 14:01:13 -0500
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "city"=>{"city_name"=>"London", "country_name"=>"England"}, "commit"=>"Create City"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "London"], ["country_name", "England"], ["created_at", "2015-02-06 19:01:13.679077"], ["updated_at", "2015-02-06 19:01:13.679077"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cities/19
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+Started GET "/cities/19" for 127.0.0.1 at 2015-02-06 14:01:13 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  Rendered cities/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:01:13.704447"], ["updated_at", "2015-02-06 19:01:13.704447"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:02:59.961799"], ["updated_at", "2015-02-06 19:02:59.961799"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mCity Load (0.7ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 21]]
+  Rendered cities/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:02:59.985284"], ["updated_at", "2015-02-06 19:02:59.985284"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 22]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:02:59.996711"], ["updated_at", "2015-02-06 19:02:59.996711"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mCity Load (0.5ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 23]]
+  Rendered cities/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#index as HTML
+  Rendered cities/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#new as HTML
+  Rendered cities/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:03:00.036369"], ["updated_at", "2015-02-06 19:03:00.036369"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/cities/24
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:03:00.043360"], ["updated_at", "2015-02-06 19:03:00.043360"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/cities/25
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>"Paris", "country_name"=>"France"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:03:00.050733"], ["updated_at", "2015-02-06 19:03:00.050733"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/cities/26
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35mCity Load (0.6ms)[0m  SELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>nil, "country_name"=>nil}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered cities/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"city_name"=>nil, "country_name"=>nil}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered cities/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 19:03:00.078442"], ["updated_at", "2015-02-06 19:03:00.078442"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cities" for 127.0.0.1 at 2015-02-06 14:03:00 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 48ms (Views: 37.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 19:03:00.136920"], ["updated_at", "2015-02-06 19:03:00.136920"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cities/28" for 127.0.0.1 at 2015-02-06 14:03:00 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 28]]
+  Rendered cities/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-06 14:03:00 -0500
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (18.2ms)
+  Rendered cities/new.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+Started POST "/cities" for 127.0.0.1 at 2015-02-06 14:03:00 -0500
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "city"=>{"city_name"=>"London", "country_name"=>"England"}, "commit"=>"Create City"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "London"], ["country_name", "England"], ["created_at", "2015-02-06 19:03:00.195376"], ["updated_at", "2015-02-06 19:03:00.195376"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cities/29
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+Started GET "/cities/29" for 127.0.0.1 at 2015-02-06 14:03:00 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 29]]
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Paris"], ["country_name", "France"], ["created_at", "2015-02-06 19:03:00.225647"], ["updated_at", "2015-02-06 19:03:00.225647"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

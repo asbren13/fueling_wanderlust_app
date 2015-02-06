@@ -1,5 +1,4 @@
 class CitiesController < ApplicationController
-  http_basic_authenticate_with name: "ashlinn", password: "password", except: [:index, :show]
 
   before_action :set_city, only: [:show, :edit, :update, :destroy]
 

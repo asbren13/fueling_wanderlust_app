@@ -2470,3 +2470,187 @@ Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1
 
 
 Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-06 12:29:08 -0500
+  [1m[36m (7.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20150206152644)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206152644"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (5.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (16.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20150206152644)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (7.6ms)[0m  [1mCREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206152644"]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20150206152644)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (9.4ms)[0m  [1mCREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206152644"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (8.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (6.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (4.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20150206152644)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (9.9ms)[0m  [1mCREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206152644"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (13.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mCity Load (0.8ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["created_at", "2015-02-06 18:57:08.942281"], ["updated_at", "2015-02-06 18:57:08.942281"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Cortona"], ["country_name", "Italy"], ["created_at", "2015-02-06 18:57:08.948637"], ["updated_at", "2015-02-06 18:57:08.948637"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["city_name", "Chiang Mai"], ["country_name", "Thailand"], ["created_at", "2015-02-06 18:57:08.960608"], ["updated_at", "2015-02-06 18:57:08.960608"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["city_name", "Queensland"], ["country_name", "Australia"], ["created_at", "2015-02-06 18:57:08.971456"], ["updated_at", "2015-02-06 18:57:08.971456"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/cities/new" for ::1 at 2015-02-06 14:05:58 -0500
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (5.6ms)
+  Rendered cities/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 122ms (Views: 102.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cities/new" for ::1 at 2015-02-06 14:05:58 -0500
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (1.4ms)
+  Rendered cities/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-06 14:05:58 -0500
+
+
+Started GET "/assets/cities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-06 14:05:59 -0500
+
+
+Started POST "/cities" for ::1 at 2015-02-06 14:06:06 -0500
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R08wlp7yO0k9s+D1/eDBqo012yS7iRHtj9zcQ8AFlB7dL7acSLrngMALliu24S7GsuowfbhcTfrTxriGW8dLNA==", "city"=>{"city_name"=>"New York City", "country_name"=>"United States of America"}, "commit"=>"Create City"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["city_name", "New York City"], ["country_name", "United States of America"], ["created_at", "2015-02-06 19:06:06.454849"], ["updated_at", "2015-02-06 19:06:06.454849"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities/8
+Completed 302 Found in 14ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/cities/8" for ::1 at 2015-02-06 14:06:06 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered cities/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 82ms (Views: 78.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/cities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-06 14:06:06 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-06 14:06:06 -0500
