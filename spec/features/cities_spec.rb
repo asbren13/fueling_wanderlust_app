@@ -15,4 +15,16 @@ RSpec.feature 'Managing Cities' do
     visit "/cities/#{city.id}"
   end
 
+  scenario 'Create a city' do #Only I can be able to do this.
+    #However, I want to make sure that it works.
+    visit '/cities/new'
+
+    fill_in 'City name', with: 'London'
+    fill_in 'Country name', with: 'England'
+    click_on 'Create City'
+
+    expect(page).to have_content(/success/i)
+  end
+
+
 end
