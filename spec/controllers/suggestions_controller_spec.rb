@@ -25,7 +25,7 @@ RSpec.describe SuggestionsController do
       expect(response).to render_template('index')
     end
 
-    it 'assigns @cities' do
+    it 'assigns @suggestions' do
       get :index, city_id: @city.id
       expect(assigns(:suggestions)).to eq @suggestions
     end
@@ -69,6 +69,29 @@ RSpec.describe SuggestionsController do
         post :create, city_id: @city.id, suggestion: invalid_attributes
         expect(response).to render_template 'new'
       end
+    end
+  end
+
+  describe 'GET show' do
+    it 'has a 200 status code' do
+      suggestion = Suggestion.create!(valid_attributes)
+      @city.suggestions << suggestion
+      get :show, city_id: @city.id, id: suggestion
+      expect(response.status).to eq 200
+    end
+
+    it 'renders the show template' do
+      suggestion = Suggestion.create!(valid_attributes)
+      @city.suggestions << suggestion
+      get :show, city_id: @city.id, id: suggestion
+      expect(response).to render_template('show')
+    end
+
+    it 'assigns @suggestion' do
+      suggestion = Suggestion.create!(valid_attributes)
+      @city.suggestions << suggestion
+      get :show, city_id: @city.id, id: suggestion
+      expect(assigns(:suggestion)).to eq suggestion
     end
   end
 end

@@ -19,6 +19,10 @@ class SuggestionsController < ApplicationController
     end
   end
 
+  def show
+    @suggestion = @city.suggestions.find(params[:id])
+  end
+
 private
   def set_city
     @city = City.find(params[:city_id])

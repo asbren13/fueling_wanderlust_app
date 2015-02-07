@@ -14,4 +14,12 @@ RSpec.describe 'routes for suggestions' do
     expect(post('/cities/1/suggestions')).to route_to('suggestions#create', city_id: "1")
   end
 
+  it 'routes GET /cities/1/suggestions/1 to the suggestions controller' do
+    expect(get('/cities/1/suggestions/1')).to route_to(
+      controller: 'suggestions',
+      action: 'show',
+      id: '1',
+      city_id: '1'
+      )
+  end
 end

@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<h1>Suggestions for <%= @city.city_name %>, <%= @city.country_name %></h1>
+
+
+<div>
+    <% @city.suggestions.each do |suggestion| %>
+      <li>
+        <div> <%= suggestion.name %> </div>
+        <div><%= suggestion.ideas %></div>
+
+      </li>
+    <% end %>
+</div>
+
+
+<%= link_to 'See All Suggestions', city_suggestions_path%>

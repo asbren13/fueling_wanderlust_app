@@ -23,12 +23,12 @@ RSpec.feature 'Managing Suggestions' do
     click_on 'Submit'
     expect(page).to have_content(/success/i)
   end
-  # scenario 'List a suggestion for a city' do
-  #   @city = City.create!(city_name:'Copenhagen', country_name:'Denmark')
-  #   @suggestion = Suggestion.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!", city: @city)
-  #   visit "/cities/#{@city.id}/suggestions/#{@suggestion.id}"
+  scenario 'List a suggestion for a city' do
+    @city = City.create!(city_name:'Copenhagen', country_name:'Denmark')
+    @suggestion = Suggestion.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!", city: @city)
+    visit "/cities/#{@city.id}/suggestions/#{@suggestion.id}"
 
-  #   expect(page).to have_content 'Suggestion'
-  #   expect(page).to have_selector 'h1', count: 1
-  # end
+    expect(page).to have_content 'Suggestion'
+    expect(page).to have_selector 'h1', count: 1
+  end
 end
