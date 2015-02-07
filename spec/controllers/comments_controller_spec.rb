@@ -49,10 +49,12 @@ RSpec.describe CommentsController do
     end
   end
 
-  describe 'POST create' do
-    context 'with valid attributes' do
+ describe 'POST create' do
+   context 'with valid attributes' do
       it 'saves a new comment' do
-        expect {post :create, city_id: @city.id, suggestion_id: @suggestion.id, comment:valid_attributes}.to change(Comment, :count).by 1
+        expect {
+          post :create, city_id: @city.id, suggestion_id: @suggestion.id, comment: valid_attributes
+        }.to change(Comment, :count).by 1
       end
 
     end
@@ -66,6 +68,29 @@ RSpec.describe CommentsController do
         post :create, city_id: @city.id, suggestion_id: @suggestion.id, comment: invalid_attributes
         expect(response).to render_template 'new'
       end
+    end
+  end
+
+  describe 'GET show' do
+    it 'has a 200 status code' do
+      comment = Comment.create!(valid_attributes)
+      @suggestion.comments << comment
+      get :show, city_id: @city.id, suggestion_id: @suggestion.id, id: comment
+      expect(response.status).to eq 200
+    end
+
+    it 'renders the show template' do
+      comment = Comment.create!(valid_attributes)
+      @suggestion.comments << comment
+      get :show, city_id: @city.id, suggestion_id: @suggestion.id, id: comment
+      expect(response).to render_template('show')
+    end
+
+    it 'assigns @comment' do
+      comment = Comment.create!(valid_attributes)
+      @suggestion.comments << comment
+      get :show, city_id: @city.id, suggestion_id: @suggestion.id, id: comment
+      expect(assigns(:comment)).to eq comment
     end
   end
 end

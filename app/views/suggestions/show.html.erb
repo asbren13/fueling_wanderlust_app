@@ -1,16 +1,15 @@
 <p id="notice"><%= notice %></p>
-<h1>Suggestions for <%= @city.city_name %>, <%= @city.country_name %></h1>
+<h1>Suggestion(s) from <%= @suggestion.name %></h1>
 
+<div><%= @suggestion.ideas %></div>
 
-<div>
-    <% @city.suggestions.each do |suggestion| %>
-      <li>
-        <div> <%= suggestion.name %> </div>
-        <div><%= suggestion.ideas %></div>
+<h3>All Comments :</h3>
 
-      </li>
-    <% end %>
-</div>
+<% @suggestion.comments.each do |comment| %>
+    <h4><%= comment.body %></h4>
 
+<% end %>
+
+<%= link_to 'New Comment', new_city_suggestion_comment_path(@city, @suggestion, @comment)  %>
 
 <%= link_to 'See All Suggestions', city_suggestions_path%>
