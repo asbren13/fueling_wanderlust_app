@@ -1,5 +1,6 @@
-<%= form_for [@city, @suggestion, @comment], :url => { :action => "create" } do |f| %>
+
+<%= form_for [@city, @suggestion, @comment] do |f| %>
   <%= f.label :body %>
-    <%= f.text_area :body %>
-    <%= submit_tag("Submit") %>
+  <%= f.text_area :body %>
+  <%= f.submit "Submit" %>
 <% end %>
