@@ -13,7 +13,7 @@ class SuggestionsController < ApplicationController
     @suggestion = Suggestion.new(suggestion_params)
     @suggestion.city = City.find(params[:city_id])
     if @suggestion.save
-      redirect_to city_suggestions_path(@suggestion.city.id), notice: 'City was successfully added'
+      redirect_to city_suggestions_path(@suggestion.city.id), notice: 'Suggestion was successfully added'
     else
       render :new
     end

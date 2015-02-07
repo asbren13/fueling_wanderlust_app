@@ -8471,3 +8471,167 @@ ORDER BY c.conname
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.8ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Ashlinn"], ["ideas", "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!"], ["city_id", 5]]
   [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-02-07 15:10:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mCity Load (1.3ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered welcome/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 222ms (Views: 202.6ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/cities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-07 15:10:35 -0500
+
+
+Started GET "/cities/1/suggestions/1" for ::1 at 2015-02-07 15:10:38 -0500
+Processing by SuggestionsController#show as HTML
+  Parameters: {"city_id"=>"1", "id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (2.2ms)[0m  SELECT  "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1 AND "suggestions"."id" = $2 LIMIT 1  [["city_id", 1], ["id", 1]]
+Completed 404 Not Found in 63ms
+
+ActiveRecord::RecordNotFound (Couldn't find Suggestion with 'id'=1 [WHERE "suggestions"."city_id" = ?]):
+  app/controllers/suggestions_controller.rb:23:in `show'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.3ms)
+  Rendered /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.7ms)
+  Rendered /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (118.4ms)
+
+
+Started GET "/cities/5/suggestions/1" for ::1 at 2015-02-07 15:10:55 -0500
+Processing by SuggestionsController#show as HTML
+  Parameters: {"city_id"=>"5", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT  "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1 AND "suggestions"."id" = $2 LIMIT 1  [["city_id", 5], ["id", 1]]
+  [1m[36mSuggestion Load (0.4ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 5]]
+  Rendered suggestions/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 80ms (Views: 69.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/cities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-07 15:10:55 -0500
+
+
+Started GET "/cities/5/suggestions/1/comments/new" for ::1 at 2015-02-07 15:11:10 -0500
+Processing by CommentsController#new as HTML
+  Parameters: {"city_id"=>"5", "suggestion_id"=>"1"}
+  [1m[35mCity Load (0.5ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mSuggestion Load (0.5ms)[0m  [1mSELECT  "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1 AND "suggestions"."id" = $2 LIMIT 1[0m  [["city_id", 5], ["id", 1]]
+  Rendered comments/_form.html.erb (34.7ms)
+  Rendered comments/new.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 115ms (Views: 102.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/cities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-07 15:11:10 -0500
+
+
+Started GET "/cities/5/suggestions/1/comments/new" for ::1 at 2015-02-07 15:11:22 -0500
+Processing by CommentsController#new as HTML
+  Parameters: {"city_id"=>"5", "suggestion_id"=>"1"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mSuggestion Load (0.5ms)[0m  [1mSELECT  "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1 AND "suggestions"."id" = $2 LIMIT 1[0m  [["city_id", 5], ["id", 1]]
+  Rendered comments/_form.html.erb (3.9ms)
+  Rendered comments/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 65ms (Views: 60.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:11:22 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-07 15:11:22 -0500

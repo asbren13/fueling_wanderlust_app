@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :cities do
     resources :suggestions, only: [:index, :show, :new, :create] do
-      resources :comments, only: [:index, :show, :new, :create]
+      resources :comments, only: [:index, :new, :create]
     end
   end
 
