@@ -51,9 +51,7 @@ RSpec.describe SuggestionsController do
   describe 'POST create' do
     context 'with valid attributes' do
       it 'saves a new suggestion' do
-        expect {
-          post :create, city_id: @city.id, suggestion: valid_attributes
-        }.to change(Suggestion, :count).by 1
+        expect {post :create, city_id: @city.id, suggestion: valid_attributes}.to change(Suggestion, :count).by 1
       end
 
       it 'redirects to the created suggestion' do

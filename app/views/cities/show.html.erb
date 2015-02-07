@@ -3,6 +3,15 @@
 
 <h3> Suggestions for <%= @city.city_name %> </h3>
 
+<div>
+    <% @city.suggestions.each do |suggestion| %>
+      <li>
+        <div> <%= suggestion.name %> </div>
+        <div><%= suggestion.ideas %></div>
+      </li>
+    <% end %>
+</div>
 
 
-<p><%= link_to 'New Suggestion', new_city_suggestion_path(@city, @suggestion)%></p>
+<%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%>
+<%= link_to 'See All Cities', cities_path%>

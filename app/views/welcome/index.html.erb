@@ -1,1 +1,9 @@
 <h1>Welcome to my work in progress!</h1>
+
+<div class="filter_options_container">
+  <form class="filter_form">
+    <%= select_tag(:city_id, options_for_select(City.all.map {|a| [a.city_name, a.id] })) %>
+    <input type="submit" value="Select City" />
+  </form>
+</div>
+

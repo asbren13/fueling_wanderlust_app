@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :cities do
-    resources :suggestions
+    resources :suggestions, only: [:index, :show, :new, :create]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
