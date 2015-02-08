@@ -3,12 +3,18 @@
 
 <h3> Suggestions for <%= @city.city_name %> </h3>
 
+
+
+
+
 <div>
+    <div><%= link_to 'View a list of all suggestions', city_suggestions_path(@city, @suggestion)%></div><br>
     <% @city.suggestions.each do |suggestion| %>
-      <li>
+      <div>
         <div> <%= suggestion.name %> </div>
         <div><%= suggestion.ideas %></div>
-      </li>
+
+      </div>
     <% end %>
 </div>
 

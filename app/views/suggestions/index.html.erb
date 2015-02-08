@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 <h1>Suggestions</h1>
 
-<% @suggestions.each do |suggestion| %>
+
+<ul><% @suggestions.each do |suggestion| %>
   <li><p><%= suggestion.name %>
   <%= suggestion.ideas %></p></li>
-<% end %>
+<% end %></ul>
 
 <%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%>
 <p><%= link_to 'Back to Previous Page', city_path(@city)%></p>

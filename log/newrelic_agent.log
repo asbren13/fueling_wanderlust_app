@@ -1,0 +1,109 @@
+# Logfile created on 2015-02-08 10:58:16 -0500 by logger.rb/47272
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Starting the New Relic agent in "test" environment.
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "test" section of your newrelic.yml.
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] WARN : No configuration file found. Working directory = /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] WARN : Looked in these locations (based on defaults): /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/.newrelic/newrelic.yml, /Users/ashlinnbrennan/newrelic.yml
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Environment: test
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : No known dispatcher detected.
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Application: test
+[02/08/15 10:58:16 -0500 Ashlinns-MacBook-Air.local (27404)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'test'.
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing ActiveJob instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing ActiveRecord 4 instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing Net instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing deferred Rack instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing Rack::Builder middleware instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing Rails 3+ middleware instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing Rails 4 Controller instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Starting the New Relic agent in "development" environment.
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] WARN : No configuration file found. Working directory = /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] WARN : Looked in these locations (based on defaults): /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/.newrelic/newrelic.yml, /Users/ashlinnbrennan/newrelic.yml
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Environment: development
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : No known dispatcher detected.
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Application: development
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing Rails 4 view instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Installing Rails 4 Error instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27404)] INFO : Finished instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing ActiveJob instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing ActiveRecord 4 instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing Net instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing deferred Rack instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing Rack::Builder middleware instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing Rails 3+ middleware instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing Rails 4 Controller instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing Rails 4 view instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Installing Rails 4 Error instrumentation
+[02/08/15 10:58:17 -0500 Ashlinns-MacBook-Air.local (27405)] INFO : Finished instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Starting the New Relic agent in "test" environment.
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "test" section of your newrelic.yml.
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] WARN : No configuration file found. Working directory = /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] WARN : Looked in these locations (based on defaults): /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/.newrelic/newrelic.yml, /Users/ashlinnbrennan/newrelic.yml
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Environment: test
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : No known dispatcher detected.
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Application: test
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'test'.
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing ActiveJob instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing ActiveRecord 4 instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing Net instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing deferred Rack instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing Rack::Builder middleware instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing Rails 3+ middleware instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing Rails 4 Controller instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing Rails 4 view instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Installing Rails 4 Error instrumentation
+[02/08/15 10:58:51 -0500 Ashlinns-MacBook-Air.local (27416)] INFO : Finished instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Starting the New Relic agent in "development" environment.
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] WARN : No configuration file found. Working directory = /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] WARN : Looked in these locations (based on defaults): /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/.newrelic/newrelic.yml, /Users/ashlinnbrennan/newrelic.yml
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Environment: development
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : No known dispatcher detected.
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Application: development
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing ActiveJob instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing ActiveRecord 4 instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing Net instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing deferred Rack instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing Rack::Builder middleware instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing Rails 3+ middleware instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing Rails 4 Controller instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing Rails 4 view instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Installing Rails 4 Error instrumentation
+[02/08/15 10:58:52 -0500 Ashlinns-MacBook-Air.local (27417)] INFO : Finished instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Starting the New Relic agent in "test" environment.
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "test" section of your newrelic.yml.
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] WARN : No configuration file found. Working directory = /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] WARN : Looked in these locations (based on defaults): /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/.newrelic/newrelic.yml, /Users/ashlinnbrennan/newrelic.yml
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Environment: test
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : No known dispatcher detected.
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Application: test
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'test'.
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing ActiveJob instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing ActiveRecord 4 instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing Net instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing deferred Rack instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing Rack::Builder middleware instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing Rails 3+ middleware instrumentation
+[02/08/15 11:00:22 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing Rails 4 Controller instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Starting the New Relic agent in "development" environment.
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] WARN : No configuration file found. Working directory = /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] WARN : Looked in these locations (based on defaults): /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/config/newrelic.yml, /Users/ashlinnbrennan/Code/Project1/fueling_wanderlust_app/newrelic.yml, /Users/ashlinnbrennan/.newrelic/newrelic.yml, /Users/ashlinnbrennan/newrelic.yml
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Environment: development
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : No known dispatcher detected.
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Application: development
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing Rails 4 view instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Installing Rails 4 Error instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27454)] INFO : Finished instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing ActiveJob instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing ActiveRecord 4 instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing Net instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing deferred Rack instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing Rack::Builder middleware instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing Rails 3+ middleware instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing Rails 4 Controller instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing Rails 4 view instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Installing Rails 4 Error instrumentation
+[02/08/15 11:00:23 -0500 Ashlinns-MacBook-Air.local (27455)] INFO : Finished instrumentation
