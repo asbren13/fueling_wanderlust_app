@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.describe CitiesController do
   let(:valid_attributes) {
-    { city_name: 'Paris', country_name:'France'}
+    { city_name: 'Paris', country_name:'France', photo_url: nil}
   }
 
   let(:invalid_attributes) {
-    { city_name: nil, country_name: nil }
+    { city_name: nil, country_name: nil, photo_url: nil }
   }
 
   describe 'GET index' do

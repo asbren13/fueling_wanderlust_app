@@ -11,7 +11,7 @@ RSpec.describe City do
     it 'is invalid without a city name' do
       expect(City.create(country_name: 'France')).not_to be_valid
     end
-    it 'is valid with a city name and a country name' do
+    it 'is valid with a city name and a country name and no photo url' do
       expect(City.create(city_name: 'Paris', country_name: 'France')).to be_valid
     end
   end

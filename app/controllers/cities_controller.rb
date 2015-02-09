@@ -43,6 +43,6 @@ class CitiesController < ApplicationController
     @city = City.find(params[:id])
   end
   def city_params
-    params.require(:city).permit(:city_name, :country_name)
+    params.require(:city).permit(:city_name, :country_name, :photo_url)
   end
 end

@@ -1,3 +1,11 @@
 <h1>Welcome to my work in progress!</h1>
-
-<%= link_to 'See All Cities', cities_path%>
+<div>
+Click below to see a list of cities
+<div class="dropdown menu">
+Pick a location you're interested in looking at!
+<form class="filter_locations", method="get">
+  <% @options = City.all.map { |a| [ a.country_name, a.id] } %>
+  <%= select_tag "city_id", options_for_select(@options), :onchange => "this.form.submit();", :include_blank => true %>
+</form>
+</div>
+</div>

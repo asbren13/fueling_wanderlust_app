@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
-<h1>List of Current Cities</h1>
+<div class="header"> <h1>List of Current Cities</h1>
+</div>
 
-
-<ul class="cities">
-  <% @cities.each do |city| %>
-    <li> <%= link_to city.city_name, city %>, <%= city.country_name %></li>
-  <% end %>
-</ul>
-
+<div class="dropdown menu">
+Pick a location you're interested in looking at!
+<form class="filter_locations", method="get">
+  <% @options = City.all.map { |a| [ a.city_name, a.country_name] } %>
+  <%= select_tag "city_id", options_for_select(@options), :onchange => "this.form.submit();", :include_blank => true %>
+</form>
+</div>
 
 <div><p>Don't see a city you'd like to learn more about? Keep checking in or send an email to asbren13@gmail.com with your city recommendation!</p></div>
