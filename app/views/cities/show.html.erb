@@ -10,8 +10,8 @@
     <div><%= link_to 'View a list of all suggestions', city_suggestions_path(@city, @suggestion)%></div><br>
     <% @city.suggestions.each do |suggestion| %>
       <div>
-        <div> <%= suggestion.name %> </div>
-        <div><%= suggestion.ideas %></div>
+        <div class="name"> <%= suggestion.name %> </div>
+        <div class="suggestion"><%= suggestion.ideas %></div>
 
       </div>
     <% end %>
