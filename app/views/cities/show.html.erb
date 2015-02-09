@@ -1,22 +1,26 @@
 <p id="notice"><%= notice %></p>
-<div class="header"><h1><%= @city.city_name %>, <%= @city.country_name %></h1>
-
+<div class="navbar">
+<ul class="nav nav-pills pull-left">
+  <li><%= link_to 'Back to Homepage', cities_path %></li>
+</ul>
+  <ul class ="nav nav-pills pull-right">
+    <li><%= link_to 'All Suggestions', city_suggestions_path(@city, @suggestion)%></li>
+    <li><%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%></li>
+  </ul>
+</div>
+<div class="header">
 <h3> Suggestions for <%= @city.city_name %> </h3>
 <%= image_tag @city.photo_url %>
 </div>
 
 
 <div>
-    <div><%= link_to 'View a list of all suggestions', city_suggestions_path(@city, @suggestion)%></div><br>
-    <% @city.suggestions.each do |suggestion| %>
-      <div>
-        <div class="name"> <%= suggestion.name %> </div>
-        <div class="suggestion"><%= suggestion.ideas %></div>
+  <% @city.suggestions.each do |suggestion| %>
+    <div>
+      <div class="name"> <%= suggestion.name %> </div>
+      <div class="suggestion"><%= suggestion.ideas %></div>
 
-      </div>
-    <% end %>
+    </div>
+  <% end %>
 </div>
 
-
-<%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%>
-<%= link_to 'See All Cities', cities_path%>

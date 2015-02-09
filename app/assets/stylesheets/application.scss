@@ -3,10 +3,15 @@
 
 body {
   background: #D6FFEB;
+  font-family: "Calligraffitti";
 }
 .header {
   text-align: center;
   position: relative;
+}
+.header img {
+  max-height: 315px;
+  max-width: 900px ;
 }
 .header-welcome {
   font-family: "Calligraffitti";
@@ -46,4 +51,13 @@ div img {
   text-align: center;
   color: #919191;
   font-family: "Calligraffitti";
+}
+.navbar {
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #ABCCBC;;
+  height: 60px;
+}
+.nav-pill {
+  height: 55px;
 }

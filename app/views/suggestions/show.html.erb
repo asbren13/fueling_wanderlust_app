@@ -1,4 +1,13 @@
 <p id="notice"><%= notice %></p>
+<div class="navbar">
+<ul class="nav nav-pills pull-left">
+  <li><%= link_to 'Back to Homepage', cities_path %></li>
+</ul>
+  <ul class ="nav nav-pills pull-right">
+    <li><%= link_to 'Back to Suggestions', city_suggestions_path(@city, @suggestion) %></li>
+    <li><%= link_to 'Add a comment!', new_city_suggestion_comment_path(@city, @suggestion, @comment)%></li>
+  </ul>
+</div>
 <h1>Suggestion(s) from <%= @suggestion.name %></h1>
 <div><%= @suggestion.ideas %></div>
 
@@ -8,7 +17,3 @@
     <h4><%= comment.body %></h4>
 
 <% end %>
-
-<%= link_to 'New Comment', new_city_suggestion_comment_path(@city, @suggestion, @comment)  %>
-
-<%= link_to 'See All Suggestions', city_suggestions_path%>
