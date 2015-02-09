@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150206225700) do
   create_table "cities", force: :cascade do |t|
     t.string   "city_name"
     t.string   "country_name"
+    t.string   "photo_url"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
