@@ -1,6 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-div .name {
-  text-weight: bold;
+.header {
+  text-align: center;
+  position: relative;
+}
+
+
+.welcome-page {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
