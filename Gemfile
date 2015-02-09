@@ -31,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'google-webfonts-rails', '~> 0.0.4'
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails', '~> 3.1.0'

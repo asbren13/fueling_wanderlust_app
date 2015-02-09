@@ -1,16 +1,49 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background: #D6FFEB;
+}
 .header {
   text-align: center;
   position: relative;
 }
-
+.header-welcome {
+  font-family: "Calligraffitti";
+  font-size: 100px;
+  margin: -10px, 0, 0, 0;
+  color: #919191;
+  font-weight: bold;
+}
+div h1 {
+  margin-bottom: -10px;
+}
+div img {
+  margin-bottom: 10px;
+  min-width: 300px;
+  min-height: 105px;
+}
 
 .welcome-page {
   text-align: center;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: "Calligraffitti";
+  font-weight: bold;
+  color: #919191;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  text-align: center;
+  color: #919191;
+  font-family: "Calligraffitti";
 }
