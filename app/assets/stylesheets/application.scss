@@ -13,7 +13,7 @@ body {
   max-height: 315px;
   max-width: 900px ;
 }
-.header-show {
+.jumbotron {
   text-align: center;
   position: relative;
   left: 50%;
@@ -24,7 +24,13 @@ body {
   max-width: 100%;
   background: #ffffff;
 }
-
+.jumbotron img {
+  max-width: 1500px;
+  max-height: 315px;
+  min-width: 1200px;
+  position: relative;
+  margin-right: auto;
+}
 .header-welcome {
   font-family: "Calligraffitti";
   font-size: 115px;
@@ -69,13 +75,13 @@ div img {
   margin-top: -10px;
   background-color: #ABCCBC;;
   height: 60px;
+  color: #919191;
 }
 .nav-pill {
   height: 55px;
 }
 .suggestions {
-  font-size: 15px;
-  margin-top: 90px;
+  font-size: 18px;
   margin-left: 10px;
   max-width: 500px;
   display: inline-block;
@@ -85,4 +91,27 @@ div img {
   font-weight: bold;
   font-size: 20px;
   margin-top: 20px;
+}
+/* unvisited link */
+a:link {
+    color: #919191;
+    font-size: 18px;
+}
+
+/* visited link */
+a:visited {
+    color: #6B7F75;
+    font-size: 18px;
+}
+
+/* mouse over link */
+a:hover {
+    color: #457F63;
+    font-size: 18px;
+}
+
+/* selected link */
+a:active {
+    color: #919191;
+    font-size: 18px;
 }

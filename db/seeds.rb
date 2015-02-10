@@ -13,8 +13,9 @@ cortona = City.create!(city_name:'Cortona', country_name:'Italy', photo_url:'htt
 florence = City.create!(city_name:'Florence', country_name:'Italy', photo_url:'http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg')
 nairobi = City.create!(city_name:'Nairobi', country_name:'Kenya', photo_url:'https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg')
 chiang_mai = City.create!(city_name:'Chiang Mai', country_name:'Thailand', photo_url:'http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg')
+san_fran = City.create!(city_name:'San Francisco', country_name:'United States', photo_url:'http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg')
 
-nyhavn = copenhagen.suggestions.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!")
+ashlinn = copenhagen.suggestions.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!")
 tammy = chiang_mai.suggestions.create!(name:'Tammy', ideas: '1. Bua Tong Water Fall aka Sticky Waterfall-Ssoooo awesome!! A waterfall you can run up!
 2. Baan Chang Elephant Park-Elephant rescue place
 3. Doi Suthep Temple')
@@ -50,4 +51,4 @@ emma = rouen.suggestions.create!(name:'Emma', ideas:"-View the exhibits at the M
 - See a renowned Opera or Ballet at the Theatre des Arts
 - Drink Belgian Delirum beer at the Delirium bar
 - Shop on the Rue Gros Horloge")
-
+karly = san_fran.suggestions.create!(name:'Karly', ideas:'My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts')

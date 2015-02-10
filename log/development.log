@@ -39057,3 +39057,3212 @@ Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1
 
 
 Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 20:41:49 -0500
+
+
+Started GET "/" for ::1 at 2015-02-09 22:22:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mCity Load (2.5ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered welcome/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 3194ms (Views: 3169.7ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/application-a2b6ce4e7594c1789f9cb7eeae7c3f70.css?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:22:37 -0500
+
+
+Started GET "/cities/6?city=6&commit=Submit" for ::1 at 2015-02-09 22:22:40 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"6", "commit"=>"Submit", "id"=>"6"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mSuggestion Load (2.6ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 6]]
+  Rendered cities/show.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 257ms (Views: 232.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:22:40 -0500
+
+
+Started GET "/cities/6?city=6&commit=Submit" for ::1 at 2015-02-09 22:23:06 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"6", "commit"=>"Submit", "id"=>"6"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mSuggestion Load (0.6ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 6]]
+  Rendered cities/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2430ms (Views: 2427.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-3903e42c196b1d817de57b3013c7e936.css?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:23:08 -0500
+
+
+Started GET "/cities" for ::1 at 2015-02-09 22:23:11 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 158ms (Views: 156.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:23:23 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSuggestion Load (0.4ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:23:23 -0500
+
+
+Started GET "/cities/2?city=2&commit=Submit" for ::1 at 2015-02-09 22:23:26 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"2", "commit"=>"Submit", "id"=>"2"}
+  [1m[35mCity Load (1.0ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mSuggestion Load (0.9ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 122ms (Views: 116.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:23:26 -0500
+
+
+Started GET "/cities/3?city=3&commit=Submit" for ::1 at 2015-02-09 22:23:30 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"3", "commit"=>"Submit", "id"=>"3"}
+  [1m[35mCity Load (1.0ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mSuggestion Load (1.1ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 3]]
+  Rendered cities/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 147ms (Views: 143.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:23:31 -0500
+
+
+Started GET "/cities/3?city=3&commit=Submit" for ::1 at 2015-02-09 22:27:56 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"3", "commit"=>"Submit", "id"=>"3"}
+  [1m[35mCity Load (0.6ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mSuggestion Load (0.4ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 3]]
+  Rendered cities/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 164ms (Views: 160.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:27:56 -0500
+
+
+Started GET "/cities/3" for ::1 at 2015-02-09 22:28:01 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mSuggestion Load (0.3ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 3]]
+  Rendered cities/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:28:01 -0500
+
+
+Started GET "/cities/1" for ::1 at 2015-02-09 22:28:02 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSuggestion Load (0.3ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:28:02 -0500
+
+
+Started GET "/cities/1" for ::1 at 2015-02-09 22:28:23 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSuggestion Load (0.4ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2804ms (Views: 2801.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-fec7b37f09c864a2469c3f8cf22cff1b.css?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:28:26 -0500
+
+
+Started GET "/cities" for ::1 at 2015-02-09 22:29:37 -0500
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.5ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 130ms (Views: 128.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:30:09 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2513ms (Views: 2510.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-6c2bc9c628551bc9cae898b7673a828a.css?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:30:12 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:30:43 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 2467ms (Views: 2463.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-b7a8fb3ad390befb7c85491b6c77083f.css?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:30:46 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:30:58 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 2308ms (Views: 2305.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-7157a91cbdc06fd4d467b191b696d765.css?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:31:00 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:31:11 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2226ms (Views: 2223.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-132a82a39310ee63a026fff3584f9f93.css?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:31:13 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:31:25 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 2136ms (Views: 2134.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-feff4da6092e07e5578b312dd9c37b84.css?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:31:27 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:31:28 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:31:56 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2363ms (Views: 2360.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-b6746f6d29268b3a2416785e0d779cc8.css?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:31:58 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:32:37 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2263ms (Views: 2259.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/application-d95a97437e57a70c1ee6c914f12a4e86.css?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:32:39 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:32:51 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.2ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2166ms (Views: 2163.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-f6e9c63650cc894af2893127e86d9354.css?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:32:53 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:33:15 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2284ms (Views: 2281.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/application-123597db515c43a227d942de1608e5fb.css?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:33:18 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:33:32 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2237ms (Views: 2234.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-9960ec773f278c4e3a4c582e583f2763.css?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:33:34 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:37:24 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.2ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 119ms (Views: 116.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:37:24 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:38:20 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.5ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2384ms (Views: 2381.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/application-9c5cb7d50a8469121a2cf2aca61c66c5.css?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:38:23 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:38:55 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 2233ms (Views: 2230.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-3306f246f8205eaf771d213788ae909a.css?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:38:57 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:41:00 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.2ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2372ms (Views: 2369.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:41:02 -0500
+
+
+Started GET "/assets/application-59f0f9e662abcbcda50d39b665709b8b.css?body=1" for ::1 at 2015-02-09 22:41:02 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:41:02 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:41:02 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:41:02 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:41:02 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:03 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:41:27 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2213ms (Views: 2210.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-57433bd7f1fe8e7a631912bef4bcef4c.css?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:41:29 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:41:36 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.5ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 110ms (Views: 107.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:41:36 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:41:44 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2056ms (Views: 2053.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/application-d6d023b7618c92bb1a9830a01bd0e3ec.css?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:41:46 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:41:58 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 2213ms (Views: 2210.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-cc748e355d7831e1537ef79e77683d03.css?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:42:00 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:42:46 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 114ms (Views: 111.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:42:46 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:43:40 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2590ms (Views: 2588.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-49b1b7400a64217ed3381ea4d21b232f.css?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:43:43 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:43:46 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2212ms (Views: 2209.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/application-07ea27f5f5a48a2626371b677ff47ab6.css?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:43:49 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:43:54 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2419ms (Views: 2416.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-cc748e355d7831e1537ef79e77683d03.css?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:43:57 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:45:31 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2435ms (Views: 2432.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-f0de487d643c9af6751ac11f30f16f0c.css?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:45:33 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:45:40 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2417ms (Views: 2415.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-c0713a9dfaa8eafdeec481e772972465.css?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:43 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:45:47 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2140ms (Views: 2137.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/application-e375448b8789dac80561287ebb8e5ed9.css?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:45:49 -0500
+
+
+Started GET "/cities/2" for ::1 at 2015-02-09 22:45:54 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 2119ms (Views: 2116.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-77c62caa4c0f44351bb3c8fe1b42f1c1.css?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:45:57 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:46:15 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 131ms (Views: 128.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/application-77c62caa4c0f44351bb3c8fe1b42f1c1.css?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:46:15 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:46:28 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2245ms (Views: 2242.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-9d619e16089b30a5501fe4b6dfc237b6.css?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:46:30 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:46:46 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.2ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 2192ms (Views: 2190.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-38f0966fbaeb9da4ce284545a7f10da4.css?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:46:48 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:47:31 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2212ms (Views: 2209.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-66958f38d8864a79fa2c68d945236dd6.css?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:47:33 -0500
+
+
+Started GET "/cities/1?city=1&commit=Submit" for ::1 at 2015-02-09 22:47:41 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"1", "commit"=>"Submit", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2130ms (Views: 2128.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-889b580e1d1b37f38bc3a10b243bb660.css?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-09 22:47:43 -0500
+
+
+Started GET "/" for ::1 at 2015-02-10 10:58:43 -0500
+Processing by WelcomeController#index as HTML
+  [1m[36mCity Load (18.4ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered welcome/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 521ms (Views: 490.4ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/assets/application-889b580e1d1b37f38bc3a10b243bb660.css?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-10 10:58:44 -0500
+  [1m[36m (486.6ms)[0m  [1mDROP DATABASE IF EXISTS "project_one_development"[0m
+  [1m[35m (288.1ms)[0m  DROP DATABASE IF EXISTS "project_one_test"
+  [1m[36m (452.9ms)[0m  [1mCREATE DATABASE "project_one_development" ENCODING = 'unicode'[0m
+  [1m[35m (255.7ms)[0m  CREATE DATABASE "project_one_test" ENCODING = 'unicode'
+  [1m[36mSQL (2.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (37.0ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (10.6ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (3.6ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments" USING btree ("suggestion_id")
+  [1m[36m (12.1ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying, "ideas" text, "city_id" integer) [0m
+  [1m[35m (2.4ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions" USING btree ("city_id")
+  [1m[36m (13.9ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_1279055e22"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35m (4.6ms)[0m  ALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_43452a1cfe"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+
+  [1m[36m (6.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (3.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (1.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206225700')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206195504')
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (22.3ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (11.3ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (2.8ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments" USING btree ("suggestion_id")
+  [1m[36m (11.3ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying, "ideas" text, "city_id" integer) [0m
+  [1m[35m (2.4ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions" USING btree ("city_id")
+  [1m[36m (7.0ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_1ff31c5698"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35m (4.8ms)[0m  ALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_662d50ba12"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (4.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (1.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206225700')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206195504')
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCity Load (1.4ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["photo_url", "http://socialmediaweek.org/wp-content/themes/smw-2014/assets/download/header-copenhagen.jpg"], ["created_at", "2015-02-10 15:58:59.479733"], ["updated_at", "2015-02-10 15:58:59.479733"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Rouen"], ["country_name", "France"], ["photo_url", "http://www.leisuretime.co.uk/images/itinerary/rouen_harbour_header.jpg"], ["created_at", "2015-02-10 15:58:59.494237"], ["updated_at", "2015-02-10 15:58:59.494237"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Cortona"], ["country_name", "Italy"], ["photo_url", "http://dylanbrowndesigns.com/wordpress/wp-content/uploads/2014/06/cortona-panorama.jpg"], ["created_at", "2015-02-10 15:58:59.499460"], ["updated_at", "2015-02-10 15:58:59.499460"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Florence"], ["country_name", "Italy"], ["photo_url", "http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg"], ["created_at", "2015-02-10 15:58:59.502923"], ["updated_at", "2015-02-10 15:58:59.502923"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Nairobi"], ["country_name", "Kenya"], ["photo_url", "https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg"], ["created_at", "2015-02-10 15:58:59.505496"], ["updated_at", "2015-02-10 15:58:59.505496"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Chiang Mai"], ["country_name", "Thailand"], ["photo_url", "http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg"], ["created_at", "2015-02-10 15:58:59.508025"], ["updated_at", "2015-02-10 15:58:59.508025"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "San Francisco"], ["country_name", "United States"], ["photo_url", "http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg"], ["created_at", "2015-02-10 15:58:59.511294"], ["updated_at", "2015-02-10 15:58:59.511294"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ashlinn"], ["ideas", "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!"], ["city_id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tammy"], ["ideas", "1. Bua Tong Water Fall aka Sticky Waterfall-Ssoooo awesome!! A waterfall you can run up!\n2. Baan Chang Elephant Park-Elephant rescue place\n3. Doi Suthep Temple"], ["city_id", 6]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bailey"], ["ideas", "1: Molessini wine tasting! Duh\n2: Cafe Degli Artisti for a great cappuccino or food!\n3: Osteria del teatro: dinner\n4: walk to the very top of the hill to visit Basilica di Santa Magherita\n5: visit MAEC (Museo dell'Accademia Etrusco): the Etruscan museum\n6: Piazza Della Repubblica (especially on market day)\n7: Tonino's: a five star restaurant\n8: La Celle: a waterfall just a hike away!"], ["city_id", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Jess"], ["ideas", "You have to climb up to Piazzale Michelangelo and see the whole panoramic view of the city from up there! Also, visit Trattoria Anita for a delicious authentic Italian meal!"], ["city_id", 4]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Caitlin"], ["ideas", "- David Sheldrick Wildlife Trust Elephant Orphanage\n- Kazuri Bead Factory\n- Dinner at Carnivore (and get nyama choma)\n- Visit Kibera and Red Rose School\n- Shopping at Toy Market\n- Masaai Markets at Westgate and Village Market\n- Climb Mt. Longonot in the Rift Valley\n- Spend time on the coast of the Indian Ocean\n- Drink lots of Tusker\n- Coffee at Nairobi Java House"], ["city_id", 5]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Emma"], ["ideas", "-View the exhibits at the Musée de Beaux Arts\n-Spend time in the Jardin de Plantes when the weather’s nice\n- Climb the Gros Horloge (big clock)\n- Go to Place St.Marc for the biggest Sunday market in the city\n- Best selection of coffees and teas from around the world at Couleur Café\n- Drink Desperados at one of O’Kallaghan’s outdoor tables\n- Go to Dame Cakes for tea and cakes\n- Explore the Vieux Marché and the surrounding restaurants and bars\n- Thé Majescule is a used bookstore on the first floor and a café on the second floor. Perfect place to study and read.\n- Walk along the Seine\n- See a renowned Opera or Ballet at the Theatre des Arts\n- Drink Belgian Delirum beer at the Delirium bar\n- Shop on the Rue Gros Horloge"], ["city_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Karly"], ["ideas", "My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts"], ["city_id", 7]]
+  [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2015-02-10 10:59:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mCity Load (0.7ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered welcome/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 436ms (Views: 418.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-10 10:59:13 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:59:14 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:59:14 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-10 10:59:14 -0500
+
+
+Started GET "/cities/7?city=7&commit=Submit" for ::1 at 2015-02-10 10:59:16 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"7", "commit"=>"Submit", "id"=>"7"}
+  [1m[36mCity Load (0.7ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mSuggestion Load (0.6ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 7]]
+  Rendered cities/show.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 211ms (Views: 184.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-10 10:59:16 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-10 10:59:17 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-10 10:59:17 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-10 10:59:17 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:59:17 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:59:17 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-10 10:59:17 -0500
+
+
+Started GET "/cities/6?city=6&commit=Submit" for ::1 at 2015-02-10 10:59:21 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"city"=>"6", "commit"=>"Submit", "id"=>"6"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 6]]
+  Rendered cities/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?body=1" for ::1 at 2015-02-10 10:59:21 -0500
+
+
+Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:59:22 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-10 10:59:22 -0500
+
+
+Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-10 10:59:22 -0500

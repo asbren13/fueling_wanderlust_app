@@ -8,11 +8,14 @@
     <li><%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%></li>
   </ul>
 </div>
-<div class="header-show">
- <%= image_tag @city.photo_url %>
-<h3>Suggestions for <%= @city.city_name %> </h3>
+<div class="jumbotron">
+  <div class="container">
+    <div class="header-show">
+     <%= image_tag @city.photo_url %>
+    <h3>Suggestions for <%= @city.city_name %> </h3>
+    </div>
 </div>
-
+</div>
 
 <div class="suggestions">
   <% @city.suggestions.each do |suggestion| %>
