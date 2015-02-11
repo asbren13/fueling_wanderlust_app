@@ -54,9 +54,9 @@ RSpec.describe SuggestionsController do
         expect {post :create, city_id: @city.id, suggestion: valid_attributes}.to change(Suggestion, :count).by 1
       end
 
-      it 'redirects to the created suggestion' do
+      it 'redirects to the created suggestion on city page' do
         post :create, city_id: @city.id, suggestion: valid_attributes
-        expect(response).to redirect_to(@city.suggestions.last)
+        expect(response).to redirect_to(@city)
       end
     end
     context 'with invalid attributes' do

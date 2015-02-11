@@ -21,7 +21,7 @@ RSpec.describe CitiesController do
     end
 
     it 'assigns @cities' do
-      cities = City.all
+      cities = City.all.order("country_name ASC").order("city_name ASC")
       get :index
       expect(assigns(:cities)).to eq cities
     end

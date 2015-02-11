@@ -77891,3 +77891,334 @@ Started GET "/assets/cities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 
 
 
 Started GET "/assets/application-cce39b21268bae8e1af32d63c98934aa.js?body=1" for ::1 at 2015-02-11 14:36:50 -0500
+
+
+Started GET "/cities/4/suggestions/new" for ::1 at 2015-02-11 14:38:41 -0500
+Processing by SuggestionsController#new as HTML
+  Parameters: {"city_id"=>"4"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered suggestions/_form.html.erb (1.6ms)
+  Rendered suggestions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 164ms (Views: 162.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/4" for ::1 at 2015-02-11 14:38:55 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 4]]
+  Rendered cities/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/4/suggestions/5" for ::1 at 2015-02-11 14:38:56 -0500
+Processing by SuggestionsController#show as HTML
+  Parameters: {"city_id"=>"4", "id"=>"5"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSuggestion Load (6.5ms)[0m  SELECT  "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1 AND "suggestions"."id" = $2 LIMIT 1  [["city_id", 4], ["id", 5]]
+  [1m[36mComment Load (1.9ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."suggestion_id" = $1[0m  [["suggestion_id", 5]]
+  Rendered suggestions/show.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 189ms (Views: 145.4ms | ActiveRecord: 34.7ms)
+  [1m[36m (287.9ms)[0m  [1mDROP DATABASE IF EXISTS "project_one_development"[0m
+  [1m[35m (116.8ms)[0m  DROP DATABASE IF EXISTS "project_one_test"
+  [1m[36m (429.8ms)[0m  [1mCREATE DATABASE "project_one_development" ENCODING = 'unicode'[0m
+  [1m[35m (251.3ms)[0m  CREATE DATABASE "project_one_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (11.2ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (9.4ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (2.8ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments" USING btree ("suggestion_id")
+  [1m[36m (10.1ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying DEFAULT 'Anonymous', "ideas" text, "city_id" integer) [0m
+  [1m[35m (2.0ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions" USING btree ("city_id")
+  [1m[36m (4.4ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03abffed86"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35m (2.7ms)[0m  ALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_40c6c22056"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (3.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (1.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206225700')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206195504')
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (16.2ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (10.8ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (2.1ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments" USING btree ("suggestion_id")
+  [1m[36m (11.7ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying DEFAULT 'Anonymous', "ideas" text, "city_id" integer) [0m
+  [1m[35m (3.4ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions" USING btree ("city_id")
+  [1m[36m (7.0ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_477a59e2c2"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35m (4.9ms)[0m  ALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_e3aea685b7"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+
+  [1m[36m (7.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (3.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (1.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206225700')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206195504')
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCity Load (1.4ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["photo_url", "http://socialmediaweek.org/wp-content/themes/smw-2014/assets/download/header-copenhagen.jpg"], ["created_at", "2015-02-11 19:42:31.336038"], ["updated_at", "2015-02-11 19:42:31.336038"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Rouen"], ["country_name", "France"], ["photo_url", "http://www.leisuretime.co.uk/images/itinerary/rouen_harbour_header.jpg"], ["created_at", "2015-02-11 19:42:31.350281"], ["updated_at", "2015-02-11 19:42:31.350281"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Cortona"], ["country_name", "Italy"], ["photo_url", "http://dylanbrowndesigns.com/wordpress/wp-content/uploads/2014/06/cortona-panorama.jpg"], ["created_at", "2015-02-11 19:42:31.356290"], ["updated_at", "2015-02-11 19:42:31.356290"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Nairobi"], ["country_name", "Kenya"], ["photo_url", "https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg"], ["created_at", "2015-02-11 19:42:31.360883"], ["updated_at", "2015-02-11 19:42:31.360883"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Chiang Mai"], ["country_name", "Thailand"], ["photo_url", "http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg"], ["created_at", "2015-02-11 19:42:31.365590"], ["updated_at", "2015-02-11 19:42:31.365590"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "San Francisco, CA"], ["country_name", "United States"], ["photo_url", "http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg"], ["created_at", "2015-02-11 19:42:31.369915"], ["updated_at", "2015-02-11 19:42:31.369915"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Florence"], ["country_name", "Italy"], ["photo_url", "http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg"], ["created_at", "2015-02-11 19:42:31.373681"], ["updated_at", "2015-02-11 19:42:31.373681"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Galway"], ["country_name", "Ireland"], ["photo_url", "http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg"], ["created_at", "2015-02-11 19:42:31.377736"], ["updated_at", "2015-02-11 19:42:31.377736"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Ashlinn"], ["ideas", "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!"], ["city_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tammy"], ["ideas", "1. Bua Tong Water Fall aka Sticky Waterfall-Ssoooo awesome!! A waterfall you can run up!\n2. Baan Chang Elephant Park-Elephant rescue place\n3. Doi Suthep Temple"], ["city_id", 5]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Bailey"], ["ideas", "1: Molessini wine tasting! Duh\n2: Cafe Degli Artisti for a great cappuccino or food!\n3: Osteria del teatro: dinner\n4: walk to the very top of the hill to visit Basilica di Santa Magherita\n5: visit MAEC (Museo dell'Accademia Etrusco): the Etruscan museum\n6: Piazza Della Repubblica (especially on market day)\n7: Tonino's: a five star restaurant\n8: La Celle: a waterfall just a hike away!"], ["city_id", 3]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Jess"], ["ideas", "You have to climb up to Piazzale Michelangelo and see the whole panoramic view of the city from up there! Also, visit Trattoria Anita for a delicious authentic Italian meal!"], ["city_id", 7]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Caitlin"], ["ideas", "- David Sheldrick Wildlife Trust Elephant Orphanage\n- Kazuri Bead Factory\n- Dinner at Carnivore (and get nyama choma)\n- Visit Kibera and Red Rose School\n- Shopping at Toy Market\n- Masaai Markets at Westgate and Village Market\n- Climb Mt. Longonot in the Rift Valley\n- Spend time on the coast of the Indian Ocean\n- Drink lots of Tusker\n- Coffee at Nairobi Java House"], ["city_id", 4]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Emma"], ["ideas", "-View the exhibits at the Musée de Beaux Arts\n-Spend time in the Jardin de Plantes when the weather’s nice\n- Climb the Gros Horloge (big clock)\n- Go to Place St.Marc for the biggest Sunday market in the city\n- Best selection of coffees and teas from around the world at Couleur Café\n- Drink Desperados at one of O’Kallaghan’s outdoor tables\n- Go to Dame Cakes for tea and cakes\n- Explore the Vieux Marché and the surrounding restaurants and bars\n- Thé Majescule is a used bookstore on the first floor and a café on the second floor. Perfect place to study and read.\n- Walk along the Seine\n- See a renowned Opera or Ballet at the Theatre des Arts\n- Drink Belgian Delirum beer at the Delirium bar\n- Shop on the Rue Gros Horloge"], ["city_id", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Karly"], ["ideas", "My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts!"], ["city_id", 6]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Declan"], ["ideas", "Must do's include: climbing Croagh Patrick, hiking the Cliffs of Moher, kayaking around the Cliffs of Moher, doing a pub crawl, touring the medieval castles in the area, and biking around the Aran Islands"], ["city_id", 8]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (120.5ms)[0m  [1mDROP DATABASE IF EXISTS "project_one_development"[0m
+  [1m[35m (121.0ms)[0m  DROP DATABASE IF EXISTS "project_one_test"
+  [1m[36m (433.5ms)[0m  [1mCREATE DATABASE "project_one_development" ENCODING = 'unicode'[0m
+  [1m[35m (250.8ms)[0m  CREATE DATABASE "project_one_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (10.1ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments" USING btree ("suggestion_id")
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying DEFAULT 'Anonymous', "ideas" text, "city_id" integer) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions" USING btree ("city_id")
+  [1m[36m (3.9ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_771ca3d15d"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35m (8.8ms)[0m  ALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_bd30709494"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206225700')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206195504')
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.9ms)[0m  CREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments" USING btree ("suggestion_id")
+  [1m[36m (6.2ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying DEFAULT 'Anonymous', "ideas" text, "city_id" integer) [0m
+  [1m[35m (1.7ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions" USING btree ("city_id")
+  [1m[36m (3.6ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_f1dffa41c9"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35m (2.3ms)[0m  ALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_824b80b11e"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.6ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206225700')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150206152644')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150206195504')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCity Load (1.2ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["photo_url", "http://socialmediaweek.org/wp-content/themes/smw-2014/assets/download/header-copenhagen.jpg"], ["created_at", "2015-02-11 19:44:43.762521"], ["updated_at", "2015-02-11 19:44:43.762521"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Rouen"], ["country_name", "France"], ["photo_url", "http://www.leisuretime.co.uk/images/itinerary/rouen_harbour_header.jpg"], ["created_at", "2015-02-11 19:44:43.769395"], ["updated_at", "2015-02-11 19:44:43.769395"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Cortona"], ["country_name", "Italy"], ["photo_url", "http://dylanbrowndesigns.com/wordpress/wp-content/uploads/2014/06/cortona-panorama.jpg"], ["created_at", "2015-02-11 19:44:43.772066"], ["updated_at", "2015-02-11 19:44:43.772066"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Nairobi"], ["country_name", "Kenya"], ["photo_url", "https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg"], ["created_at", "2015-02-11 19:44:43.775657"], ["updated_at", "2015-02-11 19:44:43.775657"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Chiang Mai"], ["country_name", "Thailand"], ["photo_url", "http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg"], ["created_at", "2015-02-11 19:44:43.778817"], ["updated_at", "2015-02-11 19:44:43.778817"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "San Francisco, CA"], ["country_name", "United States"], ["photo_url", "http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg"], ["created_at", "2015-02-11 19:44:43.782228"], ["updated_at", "2015-02-11 19:44:43.782228"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Florence"], ["country_name", "Italy"], ["photo_url", "http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg"], ["created_at", "2015-02-11 19:44:43.784708"], ["updated_at", "2015-02-11 19:44:43.784708"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Galway"], ["country_name", "Ireland"], ["photo_url", "http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg"], ["created_at", "2015-02-11 19:44:43.786986"], ["updated_at", "2015-02-11 19:44:43.786986"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Ashlinn"], ["ideas", "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!"], ["city_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tammy"], ["ideas", "1. Bua Tong Water Fall aka Sticky Waterfall-Soooo awesome!! A waterfall you can run up!\n2. Baan Chang Elephant Park-Elephant rescue place\n3. Doi Suthep Temple"], ["city_id", 5]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Bailey"], ["ideas", "1: Molessini wine tasting! Duh\n2: Cafe Degli Artisti for a great cappuccino or food!\n3: Osteria del teatro: dinner\n4: walk to the very top of the hill to visit Basilica di Santa Magherita\n5: visit MAEC (Museo dell'Accademia Etrusco): the Etruscan museum\n6: Piazza Della Repubblica (especially on market day)\n7: Tonino's: a five star restaurant\n8: La Celle: a waterfall just a hike away!"], ["city_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Jess"], ["ideas", "You have to climb up to Piazzale Michelangelo and see the whole panoramic view of the city from up there! Also, visit Trattoria Anita for a delicious authentic Italian meal!"], ["city_id", 7]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Caitlin"], ["ideas", "- David Sheldrick Wildlife Trust Elephant Orphanage\n- Kazuri Bead Factory\n- Dinner at Carnivore (and get nyama choma)\n- Visit Kibera and Red Rose School\n- Shopping at Toy Market\n- Masaai Markets at Westgate and Village Market\n- Climb Mt. Longonot in the Rift Valley\n- Spend time on the coast of the Indian Ocean\n- Drink lots of Tusker\n- Coffee at Nairobi Java House"], ["city_id", 4]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Emma"], ["ideas", "-View the exhibits at the Musée de Beaux Arts\n-Spend time in the Jardin de Plantes when the weather’s nice\n- Climb the Gros Horloge (big clock)\n- Go to Place St.Marc for the biggest Sunday market in the city\n- Best selection of coffees and teas from around the world at Couleur Café\n- Drink Desperados at one of O’Kallaghan’s outdoor tables\n- Go to Dame Cakes for tea and cakes\n- Explore the Vieux Marché and the surrounding restaurants and bars\n- Thé Majescule is a used bookstore on the first floor and a café on the second floor. Perfect place to study and read.\n- Walk along the Seine\n- See a renowned Opera or Ballet at the Theatre des Arts\n- Drink Belgian Delirum beer at the Delirium bar\n- Shop on the Rue Gros Horloge"], ["city_id", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Karly"], ["ideas", "My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts!"], ["city_id", 6]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Declan"], ["ideas", "Must do's include: climbing Croagh Patrick, hiking the Cliffs of Moher, kayaking around the Cliffs of Moher, doing a pub crawl, touring the medieval castles in the area, and biking around the Aran Islands"], ["city_id", 8]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20150206152644)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "cities" ("id" serial primary key, "city_name" character varying, "country_name" character varying, "photo_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206152644"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSuggestion (20150206195504)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "suggestions" ("id" serial primary key, "name" character varying DEFAULT 'Anonymous', "ideas" text, "city_id" integer) [0m
+  [1m[35m (1.2ms)[0m  CREATE  INDEX  "index_suggestions_on_city_id" ON "suggestions"  ("city_id")
+  [1m[36m (3.5ms)[0m  [1mALTER TABLE "suggestions" ADD CONSTRAINT "fk_rails_23023eb87c"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206195504"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150206225700)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "suggestion_id" integer) [0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX  "index_comments_on_suggestion_id" ON "comments"  ("suggestion_id")
+  [1m[36m (1.7ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_38446ef728"
+FOREIGN KEY ("suggestion_id")
+  REFERENCES "suggestions" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150206225700"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (8.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (6.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (6.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'suggestions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mCity Load (0.6ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Copenhagen"], ["country_name", "Denmark"], ["photo_url", "http://socialmediaweek.org/wp-content/themes/smw-2014/assets/download/header-copenhagen.jpg"], ["created_at", "2015-02-11 19:45:04.470863"], ["updated_at", "2015-02-11 19:45:04.470863"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Rouen"], ["country_name", "France"], ["photo_url", "http://www.leisuretime.co.uk/images/itinerary/rouen_harbour_header.jpg"], ["created_at", "2015-02-11 19:45:04.475856"], ["updated_at", "2015-02-11 19:45:04.475856"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Cortona"], ["country_name", "Italy"], ["photo_url", "http://dylanbrowndesigns.com/wordpress/wp-content/uploads/2014/06/cortona-panorama.jpg"], ["created_at", "2015-02-11 19:45:04.485143"], ["updated_at", "2015-02-11 19:45:04.485143"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Nairobi"], ["country_name", "Kenya"], ["photo_url", "https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg"], ["created_at", "2015-02-11 19:45:04.489934"], ["updated_at", "2015-02-11 19:45:04.489934"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Chiang Mai"], ["country_name", "Thailand"], ["photo_url", "http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg"], ["created_at", "2015-02-11 19:45:04.494152"], ["updated_at", "2015-02-11 19:45:04.494152"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "San Francisco, CA"], ["country_name", "United States"], ["photo_url", "http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg"], ["created_at", "2015-02-11 19:45:04.498668"], ["updated_at", "2015-02-11 19:45:04.498668"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["city_name", "Florence"], ["country_name", "Italy"], ["photo_url", "http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg"], ["created_at", "2015-02-11 19:45:04.505142"], ["updated_at", "2015-02-11 19:45:04.505142"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("city_name", "country_name", "photo_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["city_name", "Galway"], ["country_name", "Ireland"], ["photo_url", "http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg"], ["created_at", "2015-02-11 19:45:04.509258"], ["updated_at", "2015-02-11 19:45:04.509258"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ashlinn"], ["ideas", "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!"], ["city_id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tammy"], ["ideas", "1. Bua Tong Water Fall aka Sticky Waterfall-Soooo awesome!! A waterfall you can run up!\n2. Baan Chang Elephant Park-Elephant rescue place\n3. Doi Suthep Temple"], ["city_id", 5]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bailey"], ["ideas", "1: Molessini wine tasting! Duh\n2: Cafe Degli Artisti for a great cappuccino or food!\n3: Osteria del teatro: dinner\n4: walk to the very top of the hill to visit Basilica di Santa Magherita\n5: visit MAEC (Museo dell'Accademia Etrusco): the Etruscan museum\n6: Piazza Della Repubblica (especially on market day)\n7: Tonino's: a five star restaurant\n8: La Celle: a waterfall just a hike away!"], ["city_id", 3]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Jess"], ["ideas", "You have to climb up to Piazzale Michelangelo and see the whole panoramic view of the city from up there! Also, visit Trattoria Anita for a delicious authentic Italian meal!"], ["city_id", 7]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Caitlin"], ["ideas", "- David Sheldrick Wildlife Trust Elephant Orphanage\n- Kazuri Bead Factory\n- Dinner at Carnivore (and get nyama choma)\n- Visit Kibera and Red Rose School\n- Shopping at Toy Market\n- Masaai Markets at Westgate and Village Market\n- Climb Mt. Longonot in the Rift Valley\n- Spend time on the coast of the Indian Ocean\n- Drink lots of Tusker\n- Coffee at Nairobi Java House"], ["city_id", 4]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Emma"], ["ideas", "-View the exhibits at the Musée de Beaux Arts\n-Spend time in the Jardin de Plantes when the weather’s nice\n- Climb the Gros Horloge (big clock)\n- Go to Place St.Marc for the biggest Sunday market in the city\n- Best selection of coffees and teas from around the world at Couleur Café\n- Drink Desperados at one of O’Kallaghan’s outdoor tables\n- Go to Dame Cakes for tea and cakes\n- Explore the Vieux Marché and the surrounding restaurants and bars\n- Thé Majescule is a used bookstore on the first floor and a café on the second floor. Perfect place to study and read.\n- Walk along the Seine\n- See a renowned Opera or Ballet at the Theatre des Arts\n- Drink Belgian Delirum beer at the Delirium bar\n- Shop on the Rue Gros Horloge"], ["city_id", 2]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Karly"], ["ideas", "My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts!"], ["city_id", 6]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "suggestions" ("name", "ideas", "city_id") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Declan"], ["ideas", "Must do's include: climbing Croagh Patrick, hiking the Cliffs of Moher, kayaking around the Cliffs of Moher, doing a pub crawl, touring the medieval castles in the area, and biking around the Aran Islands"], ["city_id", 8]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m

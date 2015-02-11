@@ -18,7 +18,7 @@ RSpec.feature 'Managing Comments' do
     @comment = Comment.create!(body:"The Nyhavn boat tour is awesome because you get a great uncrowded view of the little mermaid statue without tourists everywhere!", suggestion: @suggestion)
     visit new_city_suggestion_comment_path(@city.id, @suggestion.id)
 
-    fill_in 'Body', with: "The Nyhavn boat tour is awesome because you get a great uncrowded view of the little mermaid statue without tourists everywhere!"
+    fill_in 'Enter your comment here:', with: "The Nyhavn boat tour is awesome because you get a great uncrowded view of the little mermaid statue without tourists everywhere!"
     click_on 'Submit'
 
   end
