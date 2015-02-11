@@ -16,7 +16,7 @@ san_fran = City.create!(city_name:'San Francisco', country_name:'United States',
 florence = City.create!(city_name:'Florence', country_name:'Italy', photo_url:'http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg')
 galway = City.create!(city_name:'Galway', country_name:'Ireland', photo_url:'http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg')
 
-ashlinn = copenhagen.suggestions.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!")
+ashlinn = copenhagen.suggestions.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!")
 tammy = chiang_mai.suggestions.create!(name:'Tammy', ideas: '1. Bua Tong Water Fall aka Sticky Waterfall-Ssoooo awesome!! A waterfall you can run up!
 2. Baan Chang Elephant Park-Elephant rescue place
 3. Doi Suthep Temple')
