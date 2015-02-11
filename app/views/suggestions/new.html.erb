@@ -6,6 +6,11 @@
     <li><%= link_to 'Back to City', city_path(@city) %></li>
   </ul>
 </div>
+<div class="header-show">
+  <div class="col-lg-14">
+    <img class="img-responsive" src="<%= @city.photo_url %>">
+  </div>
+</div>
 
 <h1 class="header">Adding a new Suggestion</h1>
 

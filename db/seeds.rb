@@ -52,5 +52,5 @@ emma = rouen.suggestions.create!(name:'Emma', ideas:"-View the exhibits at the M
 - See a renowned Opera or Ballet at the Theatre des Arts
 - Drink Belgian Delirum beer at the Delirium bar
 - Shop on the Rue Gros Horloge")
-karly = san_fran.suggestions.create!(name:'Karly', ideas:'My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts')
+karly = san_fran.suggestions.create!(name:'Karly', ideas:'My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts!')
 declan = galway.suggestions.create!(name:'Declan', ideas:"Must do's include: climbing Croagh Patrick, hiking the Cliffs of Moher, kayaking around the Cliffs of Moher, doing a pub crawl, touring the medieval castles in the area, and biking around the Aran Islands")

@@ -6,5 +6,10 @@
     <li><%= link_to 'Back to Previous Page', city_suggestion_path(@city, @suggestion) %></li>
   </ul>
 </div>
+<div class="header-show">
+  <div class="col-lg-14">
+    <img class="img-responsive" src="<%= @city.photo_url %>">
+  </div>
+</div>
 <h1 class="header">Adding a new Comment</h1>
 <%= render 'form' %>
