@@ -12,7 +12,7 @@ rouen = City.create!(city_name:'Rouen', country_name: 'France', photo_url:'http:
 cortona = City.create!(city_name:'Cortona', country_name:'Italy', photo_url:'http://dylanbrowndesigns.com/wordpress/wp-content/uploads/2014/06/cortona-panorama.jpg')
 nairobi = City.create!(city_name:'Nairobi', country_name:'Kenya', photo_url:'https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg')
 chiang_mai = City.create!(city_name:'Chiang Mai', country_name:'Thailand', photo_url:'http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg')
-san_fran = City.create!(city_name:'San Francisco', country_name:'United States', photo_url:'http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg')
+san_fran = City.create!(city_name:'San Francisco, CA', country_name:'United States', photo_url:'http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg')
 florence = City.create!(city_name:'Florence', country_name:'Italy', photo_url:'http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg')
 galway = City.create!(city_name:'Galway', country_name:'Ireland', photo_url:'http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg')
 
