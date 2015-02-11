@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20150206225700) do
   add_index "comments", ["suggestion_id"], name: "index_comments_on_suggestion_id", using: :btree
 
   create_table "suggestions", force: :cascade do |t|
-    t.string  "name"
+    t.string  "name",    default: "Anonymous"
     t.text    "ideas"
     t.integer "city_id"
   end

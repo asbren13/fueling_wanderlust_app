@@ -8,10 +8,11 @@ body {
 .header {
   text-align: center;
   position: relative;
+  @extend .row;
 }
 .header img {
-  max-height: 315px;
-  max-width: 900px ;
+  position: relative;
+  margin: 0 auto;
 }
 .jumbotron {
   text-align: center;
@@ -25,9 +26,6 @@ body {
   background: #ffffff;
 }
 .jumbotron img {
-  max-width: 1500px;
-  max-height: 315px;
-  min-width: 1200px;
   position: relative;
   margin-right: auto;
 }
@@ -61,7 +59,7 @@ div img {
 }
 
 .footer {
-  position:fixed;
+  position:relative;
   left:0px;
   bottom:0px;
   height:30px;
@@ -69,20 +67,22 @@ div img {
   text-align: center;
   color: #919191;
   font-family: "Calligraffitti";
+  margin-top: 20px;
 }
 .navbar {
   margin-left: -10px;
   margin-top: -10px;
   background-color: #ABCCBC;;
-  height: 60px;
+  height: 50px;
   color: #919191;
 }
 .nav-pill {
   height: 55px;
+  margin-top: 10px;
 }
 .suggestions {
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 30px;
   max-width: 500px;
   display: inline-block;
   position: relative;
@@ -114,4 +114,12 @@ a:hover {
 a:active {
     color: #919191;
     font-size: 18px;
+}
+.city_country {
+  font-size: 20px;
+  text-align: center;
+}
+.form {
+  text-align: center;
+  margin-bottom: 15px;
 }

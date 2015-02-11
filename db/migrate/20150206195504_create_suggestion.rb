@@ -1,7 +1,7 @@
 class CreateSuggestion < ActiveRecord::Migration
   def change
     create_table :suggestions do |t|
-      t.string :name
+      t.string :name, default: 'Anonymous'
       t.text :ideas
       t.belongs_to :city, index: true
     end

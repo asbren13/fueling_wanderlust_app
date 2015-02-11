@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 <div class="navbar">
 <ul class="nav nav-pills pull-left">
-  <li><%= link_to 'Back to Homepage', cities_path %></li>
+  <li><%= link_to 'Back to Homepage', root_path %></li>
 </ul>
   <ul class ="nav nav-pills pull-right">
-    <li><%= link_to 'All Suggestions', city_suggestions_path(@city, @suggestion)%></li>
+    <li><%= link_to 'All Cities', cities_path(@city)%></li>
     <li><%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%></li>
   </ul>
 </div>
 <div class="jumbotron">
   <div class="container">
     <div class="header-show">
-     <%= image_tag @city.photo_url %>
+     <div class="col-lg-12"><img class="img-responsive" src="<%= @city.photo_url %>"></div>
     <h3>Suggestions for <%= @city.city_name %> </h3>
     </div>
 </div>

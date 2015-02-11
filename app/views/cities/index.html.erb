@@ -1,18 +1,25 @@
+<p id="notice"><%= notice %></p>
+<div class="navbar">
+<ul class="nav nav-pills pull-left">
+  <li><%= link_to 'Back to Homepage', root_path %></li>
+</ul>
+</div>
 <div class="header">
   <h1 class="header-welcome">Fueling</h1>
-  <img src="http://3.bp.blogspot.com/-qP4_OfnqB0Q/UeFsfbZCsJI/AAAAAAAAAwo/yHSsXuP2jw4/s1600/header%2Bnanan%2Bpng%25282%2529.png">
-</div>
-<div class="welcome-page">
-Click below to see a list of cities
-  <div class="dropdown menu">
-  Pick a location you're interested in exploring!
-    <form class="filter_locations", action="", method="get">
-       <% @options = City.all.map { |a| [  a.city_name, a.country_name, a.id] } %>
-       <%= select_tag "city", options_for_select(@options), :onchange => "this.form.action = '/cities/' +\
-      this.value;", :include_blank => true %>
-       <%= submit_tag "Submit" %>
-    </form>
+  <div class="col-lg-12">
+    <img class="img-responsive" src="http://3.bp.blogspot.com/-qP4_OfnqB0Q/UeFsfbZCsJI/AAAAAAAAAwo/yHSsXuP2jw4/s1600/header%2Bnanan%2Bpng%25282%2529.png">
   </div>
+</div>
+
+<div class="container">
+<h2> Cities </h2>
+<ul>
+<% @cities.each do |city| %>
+    <div>
+      <div class="city_country"> <%= city.city_name %>, <%= city.country_name  %> --  <%= link_to 'Explore', city %> </div>
+    </div>
+  <% end %>
+</ul>
 </div>
 
 
