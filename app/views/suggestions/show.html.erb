@@ -8,10 +8,15 @@
     <li><%= link_to 'Add a Comment', new_city_suggestion_comment_path(@city, @suggestion, @comment) %></li>
   </ul>
 </div>
+<div class="header-show">
+  <div class="col-lg-14">
+    <img class="img-responsive" src="<%= @city.photo_url %>">
+  </div>
+</div>
 <div class="container">
-  <h1>Suggestion(s) from <%= @suggestion.name %>:</h1>
+  <h1>Suggestion from <%= @suggestion.name %>:</h1>
   <br>
-  <div class="suggestions">
+  <div class="suggestions-show">
   <div ><%= @suggestion.ideas %></div>
   <br>
   <h3>All Comments :</h3>
