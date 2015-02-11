@@ -5,6 +5,9 @@ body {
   background: #D6FFEB;
   font-family: "Calligraffitti";
 }
+.body {
+
+}
 .navbar {
   margin: -10px 0px 0px 0px;
   padding: 0;
@@ -24,25 +27,32 @@ body {
 }
 .header img {
   position: relative;
+  max-width: 1278;
   margin: 0 auto;
+  @extend .row;
 }
 .header-show {
-  text-decoration: underline;
-}
-.jumbotron {
+  @extend .row;
   text-align: center;
   min-width: 100%;
   max-width: 100%;
-  background: #FFFFFF;
+  background: #D6FFEB;
   max-height: 320px;
+  min-height: 315px;
   padding: 0;
-  margin-top: -20px;
-}
-.jumbotron img {
+  margin: 0 auto;
+  text-decoration: underline;
   position: relative;
-  margin-right: auto;
+}
+.header-show img {
+  position: relative;
   width: 100%;
   max-height: 300px;
+  min-height: 300px;
+}
+.header-text{
+  text-align: center;
+  text-decoration: underline;
 }
 .jumbotron-welcome {
   text-align: center;
@@ -55,12 +65,12 @@ body {
 .jumbotron-welcome img {
   position: relative;
   margin-right: auto;
-  width: 100%;
+  min-width: 100%;
   max-height: 300px;
 }
 .jumbotron-welcome h1 {
   font-family: "Calligraffitti";
-  font-size: 115px;
+  font-size: 90px;
   color: #919191;
   font-weight: bold;
 }
@@ -106,14 +116,20 @@ div img {
 .suggestions {
   font-size: 18px;
   margin-left: 30px;
-  max-width: 500px;
+  margin-right: 5px;
+  max-width: 800px;
   display: inline-block;
   position: relative;
+  border-radius: 10px;
 }
 .name {
   font-weight: bold;
   font-size: 20px;
   margin-top: 20px;
+  text-decoration: underline;
+}
+.suggestion{
+  margin-right: 10px;
 }
 /* unvisited link */
 a:link {
