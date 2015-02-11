@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe SuggestionsController do
-  let(:valid_attributes) {
-    { ideas: "sucks" }
-  }
+  let(:valid_attributes) do
+    { ideas: 'sucks' }
+  end
 
-  let(:invalid_attributes) {
+  let(:invalid_attributes) do
     { ideas: nil }
-  }
+  end
 
   before(:all) do
-    @city = City.create!(city_name:'Copenhagen', country_name:'Denmark')
+    @city = City.create!(city_name: 'Copenhagen', country_name: 'Denmark')
     @suggestions = @city.suggestions
   end
 
@@ -51,7 +51,10 @@ RSpec.describe SuggestionsController do
   describe 'POST create' do
     context 'with valid attributes' do
       it 'saves a new suggestion' do
-        expect {post :create, city_id: @city.id, suggestion: valid_attributes}.to change(Suggestion, :count).by 1
+        expect do
+          post :create, city_id: @city.id,
+                        suggestion: valid_attributes
+        end.to change(Suggestion, :count).by 1
       end
 
       it 'redirects to the created suggestion on city page' do
@@ -95,4 +98,3 @@ RSpec.describe SuggestionsController do
     end
   end
 end
-

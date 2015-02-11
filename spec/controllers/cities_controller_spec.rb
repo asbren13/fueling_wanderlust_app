@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe CitiesController do
-  let(:valid_attributes) {
-    { city_name: 'Paris', country_name:'France', photo_url: nil}
-  }
+  let(:valid_attributes) do
+    { city_name: 'Paris', country_name: 'France', photo_url: nil }
+  end
 
-  let(:invalid_attributes) {
+  let(:invalid_attributes) do
     { city_name: nil, country_name: nil, photo_url: nil }
-  }
+  end
 
   describe 'GET index' do
     it 'has a 200 status code' do
@@ -21,7 +21,7 @@ RSpec.describe CitiesController do
     end
 
     it 'assigns @cities' do
-      cities = City.all.order("country_name ASC").order("city_name ASC")
+      cities = City.all.order('country_name ASC').order('city_name ASC')
       get :index
       expect(assigns(:cities)).to eq cities
     end
@@ -49,7 +49,7 @@ RSpec.describe CitiesController do
 
   describe 'GET new' do
     it 'has a 200 status code' do
-    get 'index'
+      get 'index'
       get :new
       expect(response.status).to eq 200
     end
@@ -68,9 +68,9 @@ RSpec.describe CitiesController do
   describe 'POST create' do
     context 'with valid attributes' do
       it 'saves a new city' do
-        expect {
+        expect do
           post :create, city: valid_attributes
-        }.to change(City, :count).by 1
+        end.to change(City, :count).by 1
       end
 
       it 'assigns @city' do
@@ -120,9 +120,9 @@ RSpec.describe CitiesController do
 
   describe 'PATCH update' do
     context 'with valid attributes' do
-      let(:new_attributes) {
+      let(:new_attributes) do
         { city_name: 'London', country_name: 'England' }
-      }
+      end
 
       it 'updates the requested article' do
         city = City.create!(valid_attributes)
@@ -162,13 +162,13 @@ RSpec.describe CitiesController do
   describe 'DELETE destroy' do
     it 'destroys the requested city' do
       city = City.create!(valid_attributes)
-      expect {
+      expect do
         delete :destroy, id: city
-      }.to change(City, :count).by(-1)
+      end.to change(City, :count).by(-1)
     end
 
     it 'redirects to the cities list' do
-     city = City.create!(valid_attributes)
+      city = City.create!(valid_attributes)
       delete :destroy, id: city
       expect(response).to redirect_to cities_url
     end

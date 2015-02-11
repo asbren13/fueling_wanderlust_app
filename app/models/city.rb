@@ -1,3 +1,4 @@
+# City Model File
 class City < ActiveRecord::Base
   has_many :suggestions, dependent: :destroy
 

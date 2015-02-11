@@ -1,9 +1,13 @@
+# Controller for cities model
 class CitiesController < ApplicationController
-
   before_action :set_city, only: [:show, :edit, :update, :destroy]
 
   def index
-    @cities = City.all.order("country_name ASC").order("city_name ASC")
+    @cities = City.all.order('country_name ASC').order('city_name ASC')
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render xml: @cities }
+    end
   end
 
   def show
@@ -39,9 +43,11 @@ class CitiesController < ApplicationController
   end
 
   private
+
   def set_city
     @city = City.find(params[:id])
   end
+
   def city_params
     params.require(:city).permit(:city_name, :country_name, :photo_url)
   end

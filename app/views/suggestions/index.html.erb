@@ -1,16 +1,22 @@
 <p id="notice"><%= notice %></p>
 <div class="navbar">
-<ul class="nav nav-pills pull-left">
-  <li><%= link_to 'Back to Homepage', cities_path %></li>
-</ul>
+  <ul class="nav nav-pills pull-left">
+    <li><%= link_to 'Back to Homepage', cities_path %></li>
+  </ul>
   <ul class ="nav nav-pills pull-right">
     <li><%= link_to 'Back to City', city_path(@city) %></li>
     <li><%= link_to 'Add your suggestion!', new_city_suggestion_path(@city, @suggestion)%></li>
   </ul>
 </div>
+
 <div class="header"><h1>Suggestions</h1>
 
-<ul><% @suggestions.each do |suggestion| %>
-  <li><%= suggestion.name %>
-  <%= suggestion.ideas %> <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%></li>
-<% end %></ul>
+  <ul>
+    <% @suggestions.each do |suggestion| %>
+    <li>
+      <%= suggestion.name %>
+      <%= suggestion.ideas %> <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%>
+    </li>
+    <% end %>
+  </ul>
+</div>

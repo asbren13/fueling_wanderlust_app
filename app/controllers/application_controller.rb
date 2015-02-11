@@ -1,3 +1,4 @@
+# Not sure what should go here but rubocop wants something
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.

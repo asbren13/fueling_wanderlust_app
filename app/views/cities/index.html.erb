@@ -5,7 +5,7 @@
     <li><%= link_to 'Back to Homepage', root_path %></li>
   </ul>
 
-  </div>
+</div>
 <div class="jumbotron-welcome">
   <div class="container">
     <h1 class="header-index">Fueling</h1>
@@ -15,16 +15,16 @@
   </div>
 </div>
 <div class="body">
-<div class="container">
-<h2> Cities </h2>
-<ul>
-<% @cities.each do |city| %>
-    <div>
-      <div class="city_country"> <%= city.city_name %>, <%= city.country_name  %> --  <%= link_to 'Explore', city %> </div>
-    </div>
-  <% end %>
-</ul>
-</div>
+  <div class="container">
+    <h2> Cities </h2>
+    <ul>
+      <% @cities.each do |city| %>
+      <div>
+        <div class="city_country"> <%= city.city_name %>, <%= city.country_name  %> --  <%= link_to 'Explore', city %> </div>
+      </div>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 <div class="footer"><p>Don't see a city you'd like to learn more about? Keep checking in or send an email to <a href="mailto:asbren13@gmail.com">asbren13@gmail.com</a> with your city recommendation!</p></div>

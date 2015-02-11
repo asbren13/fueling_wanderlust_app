@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe CommentsController do
- let(:valid_attributes) {
-    { body: "sucks" }
-  }
+  let(:valid_attributes) do
+    { body: 'sucks' }
+  end
 
-  let(:invalid_attributes) {
+  let(:invalid_attributes) do
     { body: nil }
-  }
+  end
   before(:all) do
-    @city = City.create!(city_name:'Copenhagen', country_name:'Denmark')
-    @suggestion = @city.suggestions.create!(ideas:"sucks")
+    @city = City.create!(city_name: 'Copenhagen', country_name: 'Denmark')
+    @suggestion = @city.suggestions.create!(ideas: 'sucks')
     @suggestion.save
     @comments = @suggestion.comments
   end
@@ -49,23 +49,28 @@ RSpec.describe CommentsController do
     end
   end
 
- describe 'POST create' do
-   context 'with valid attributes' do
+  describe 'POST create' do
+    context 'with valid attributes' do
       it 'saves a new comment' do
-        expect {
-          post :create, city_id: @city.id, suggestion_id: @suggestion.id, comment: valid_attributes
-        }.to change(Comment, :count).by 1
+        expect do
+          post :create, city_id: @city.id,
+                        suggestion_id: @suggestion.id,
+                        comment: valid_attributes
+        end.to change(Comment, :count).by 1
       end
-
     end
     context 'with invalid attributes' do
       it 'assigns @comment, but does not save a new comment' do
-        post :create, city_id: @city.id, suggestion_id: @suggestion.id, comment: invalid_attributes
+        post :create, city_id: @city.id,
+                      suggestion_id: @suggestion.id,
+                      comment: invalid_attributes
         expect(assigns(:comment)).to be_a_new Comment
       end
 
       it 're-renders the new template' do
-        post :create, city_id: @city.id, suggestion_id: @suggestion.id, comment: invalid_attributes
+        post :create, city_id: @city.id,
+                      suggestion_id: @suggestion.id,
+                      comment: invalid_attributes
         expect(response).to render_template 'new'
       end
     end

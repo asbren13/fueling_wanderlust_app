@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'routes for cities' do
-
   it 'routes GET /cities to the cities controller' do
     expect(get('/cities')).to route_to('cities#index')
   end
@@ -45,5 +44,4 @@ RSpec.describe 'routes for cities' do
       id: '1'
     )
   end
-
 end

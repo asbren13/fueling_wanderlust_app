@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'Managing Cities' do
   scenario 'List all cities' do
     City.destroy_all
-    City.create!(city_name:'Copenhagen', country_name:'Denmark')
+    City.create!(city_name: 'Copenhagen', country_name: 'Denmark')
     visit '/cities'
 
     expect(page).to have_content 'Cities'
@@ -11,12 +11,12 @@ RSpec.feature 'Managing Cities' do
   end
 
   scenario 'See a citys suggestions' do
-    city = City.create!(city_name:'Copenhagen', country_name: 'Denmark')
+    city = City.create!(city_name: 'Copenhagen', country_name: 'Denmark')
     visit "/cities/#{city.id}"
   end
 
-#Only I can be able to do the below.
-#However, I want to make sure that it works.
+  # Only I can be able to do the below.
+  # However, I want to make sure that it works.
   scenario 'Create a city' do
     visit '/cities/new'
 

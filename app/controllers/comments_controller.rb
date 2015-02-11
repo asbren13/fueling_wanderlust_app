@@ -1,3 +1,4 @@
+# Comments Controller
 class CommentsController < ApplicationController
   before_action :set_city
   before_action :set_suggestion
@@ -10,10 +11,11 @@ class CommentsController < ApplicationController
     @comment = Comment.new
   end
 
- def create
+  def create
     @comment = @suggestion.comments.build(comment_params)
     if @comment.save
-      redirect_to city_suggestion_path(@city, @suggestion), notice: 'Comment was successfully created.'
+      redirect_to city_suggestion_path(@city, @suggestion), notice:
+      'Comment successfully created.'
     else
       render :new
     end
@@ -23,7 +25,8 @@ class CommentsController < ApplicationController
     @comment = @suggestion.comments.find(params[:id])
   end
 
-private
+  private
+
   def set_city
     @city = City.find(params[:city_id])
   end
