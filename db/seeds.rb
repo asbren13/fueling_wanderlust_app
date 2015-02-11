@@ -16,6 +16,7 @@ florence = City.create!(city_name: 'Florence', country_name: 'Italy', photo_url:
 galway = City.create!(city_name: 'Galway', country_name: 'Ireland', photo_url: 'http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg')
 london = City.create!(city_name: 'London', country_name: 'England', photo_url: 'http://www.londonshoeshine.com/wp-content/uploads/2013/06/panoramic_cityscapes4.jpg')
 ottawa = City.create!(city_name: 'Ottawa', country_name: 'Canada', photo_url: 'http://blog.navut.com/wp-content/uploads/2014/11/3794011206_37538c9bf1_b1.jpg')
+taupo = City.create!(city_name: 'Taupo', country_name: 'New Zealand', photo_url: 'http://www.straytravel.com/assets/Uploads/taupo-sunset-header.jpg')
 
 copenhagen.suggestions.create!(name: 'Ashlinn', ideas:  "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!")
 chiang_mai.suggestions.create!(name: 'Tammy', ideas:  '1. Bua Tong Water Fall aka Sticky Waterfall-Soooo awesome!! A waterfall you can run up!
@@ -58,3 +59,4 @@ galway.suggestions.create!(name: 'Declan', ideas: "Must do's include: climbing C
 london.suggestions.create!(name: 'Holly',
   ideas: "Go to O'Neil's in Muswell Hill! It's a lot of fun! You should also make sure to take time to do all of the typical tourist stuff like Buckingham Palace, the London Eye, the Tower of London, etc")
 ottawa.suggestions.create!(name: 'Ashlinn', ideas: 'A must-do in the winter is skating on the Rideau Canal! It can be a bit crowded, but it is an awesome experience. Make sure to also checkout Winterlude if you are in the are during late January or early February!')
+taupo.suggestions.create!(name: 'Anonymous', ideas: 'Visit Lake Taupo and go skydiving while in the area to see some beautiful views!')
