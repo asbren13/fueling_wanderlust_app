@@ -15,6 +15,7 @@ chiang_mai = City.create!(city_name:'Chiang Mai', country_name:'Thailand', photo
 san_fran = City.create!(city_name:'San Francisco, CA', country_name:'United States', photo_url:'http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg')
 florence = City.create!(city_name:'Florence', country_name:'Italy', photo_url:'http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg')
 galway = City.create!(city_name:'Galway', country_name:'Ireland', photo_url:'http://upload.wikimedia.org/wikipedia/commons/b/bb/Galway_Panorama_%287061241087%29.jpg')
+london = City.create!(city_name:'London', country_name:'England', photo_url:'http://www.londonshoeshine.com/wp-content/uploads/2013/06/panoramic_cityscapes4.jpg')
 
 ashlinn = copenhagen.suggestions.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!")
 tammy = chiang_mai.suggestions.create!(name:'Tammy', ideas: '1. Bua Tong Water Fall aka Sticky Waterfall-Soooo awesome!! A waterfall you can run up!
@@ -54,3 +55,4 @@ emma = rouen.suggestions.create!(name:'Emma', ideas:"-View the exhibits at the M
 - Shop on the Rue Gros Horloge")
 karly = san_fran.suggestions.create!(name:'Karly', ideas:'My absolute favorite place to go on a sunny weekend is the Palace of Fine Arts!')
 declan = galway.suggestions.create!(name:'Declan', ideas:"Must do's include: climbing Croagh Patrick, hiking the Cliffs of Moher, kayaking around the Cliffs of Moher, doing a pub crawl, touring the medieval castles in the area, and biking around the Aran Islands")
+holly = london.suggestions.create!(name:'Holly', ideas:"Go to O'Neil's in Muswell Hill! It's a lot of fun! You should also make sure to take time to do all of the typical tourist stuff like Buckingham Palace, the London Eye, the Tower of London, etc")
