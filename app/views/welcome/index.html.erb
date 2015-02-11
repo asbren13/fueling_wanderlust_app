@@ -10,7 +10,7 @@ Click below to see a list of cities
   <div class="dropdown menu">
   Pick a location you're interested in exploring!
     <form class="filter_locations", action="", method="get">
-       <% @options = City.all.order("country_name ASC").order("city_name ASC").map { |a| [  a.city_name, a.id] } %>
+       <% @options = City.all.order("country_name ASC").order("city_name ASC").map { |a| [  a.city_name+', ' + a.country_name, a.id] } %>
        <%= select_tag "city", options_for_select(@options), :onchange => "this.form.action = '/cities/' +\
       this.value;", :include_blank => true %>
        <%= submit_tag "Submit" %>
