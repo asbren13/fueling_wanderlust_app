@@ -4,6 +4,19 @@
 body {
   background: #D6FFEB;
   font-family: "Calligraffitti";
+  color: #919191;
+}
+.navbar {
+  margin: -10px 0px 0px 0px;
+  padding: 0;
+  background-color: #ABCCBC;;
+  height: 50px;
+  color: #919191;
+  min-height: 50px;
+}
+.nav-pill {
+  height: 55px;
+  margin-top: 10px;
 }
 .header {
   text-align: center;
@@ -16,23 +29,42 @@ body {
 }
 .jumbotron {
   text-align: center;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  margin: -20px auto 10px 0;
-  padding: 0px;
   min-width: 100%;
   max-width: 100%;
-  background: #ffffff;
+  background: #FFFFFF;
+  max-height: 320px;
+  padding: 0;
+  margin-top: -20px;
 }
 .jumbotron img {
   position: relative;
   margin-right: auto;
+  width: 100%;
+  max-height: 300px;
+}
+.jumbotron-welcome {
+  text-align: center;
+  min-width: 100%;
+  max-width: 100%;
+  background: #D6FFEB;
+  padding: 0;
+  margin-top: -5px;
+}
+.jumbotron-welcome img {
+  position: relative;
+  margin-right: auto;
+  width: 100%;
+  max-height: 300px;
+}
+.jumbotron-welcome h1 {
+  font-family: "Calligraffitti";
+  font-size: 115px;
+  color: #919191;
+  font-weight: bold;
 }
 .header-welcome {
   font-family: "Calligraffitti";
-  font-size: 115px;
-  margin: -10px, 0, 0, 0;
+  font-size: 100px;
   color: #919191;
   font-weight: bold;
 }
@@ -68,17 +100,6 @@ div img {
   color: #919191;
   font-family: "Calligraffitti";
   margin-top: 20px;
-}
-.navbar {
-  margin-left: -10px;
-  margin-top: -10px;
-  background-color: #ABCCBC;;
-  height: 50px;
-  color: #919191;
-}
-.nav-pill {
-  height: 55px;
-  margin-top: 10px;
 }
 .suggestions {
   font-size: 18px;
@@ -122,4 +143,7 @@ a:active {
 .form {
   text-align: center;
   margin-bottom: 15px;
+}
+h2 {
+  text-align: center;
 }
