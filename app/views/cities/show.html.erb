@@ -21,7 +21,9 @@
   <% @city.suggestions.each do |suggestion| %>
     <div>
       <div class="name"> <%= suggestion.name %> </div>
-      <div class="suggestion"><%= suggestion.ideas %> <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%></div>
+      <div class="suggestion"><%= suggestion.ideas %>
+      </div>
+      <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%>
     </div>
   <% end %>
 </div>

@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
 <div class="navbar">
 <ul class="nav nav-pills pull-left">
-  <li><%= link_to 'Back to Homepage', cities_path %></li>
+  <li><%= link_to 'Back to Homepage', root_path %></li>
 </ul>
   <ul class ="nav nav-pills pull-right">
-    <li><%= link_to 'Back to Suggestions', city_suggestions_path(@city, @suggestion) %></li>
-    <li><%= link_to 'Add a comment!', new_city_suggestion_comment_path(@city, @suggestion, @comment)%></li>
+    <li><%= link_to 'Back to City', city_path(@city) %></li>
+    <li><%= link_to 'Add a Comment', new_city_suggestion_comment_path(@city, @suggestion, @comment) %></li>
   </ul>
 </div>
-<h1>Suggestion(s) from <%= @suggestion.name %></h1>
-<div><%= @suggestion.ideas %></div>
+<div class="container">
+  <h1>Suggestion(s) from <%= @suggestion.name %></h1>
 
-<h3>All Comments :</h3>
+  <div ><%= @suggestion.ideas %></div>
 
-<% @suggestion.comments.each do |comment| %>
-    <h4><%= comment.body %></h4>
+  <h3>All Comments :</h3>
 
-<% end %>
+  <% @suggestion.comments.each do |comment| %>
+      <h4><%= comment.body %></h4>
+
+  <% end %>
+</div>

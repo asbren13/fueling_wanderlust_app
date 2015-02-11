@@ -3,7 +3,7 @@ class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
 
   def index
-    @cities = City.all
+    @cities = City.all.order("country_name ASC").order("city_name ASC")
   end
 
   def show

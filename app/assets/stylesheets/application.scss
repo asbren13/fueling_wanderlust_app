@@ -4,7 +4,6 @@
 body {
   background: #D6FFEB;
   font-family: "Calligraffitti";
-  color: #919191;
 }
 .navbar {
   margin: -10px 0px 0px 0px;
@@ -26,6 +25,9 @@ body {
 .header img {
   position: relative;
   margin: 0 auto;
+}
+.header-show {
+  text-decoration: underline;
 }
 .jumbotron {
   text-align: center;
@@ -140,9 +142,14 @@ a:active {
   font-size: 20px;
   text-align: center;
 }
-.form {
+.container {
   text-align: center;
-  margin-bottom: 15px;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+.above-footer {
+  text-align: center;
 }
 h2 {
   text-align: center;

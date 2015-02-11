@@ -10,10 +10,10 @@ City.destroy_all
 copenhagen = City.create!(city_name:'Copenhagen', country_name:'Denmark', photo_url:'http://socialmediaweek.org/wp-content/themes/smw-2014/assets/download/header-copenhagen.jpg')
 rouen = City.create!(city_name:'Rouen', country_name: 'France', photo_url:'http://www.leisuretime.co.uk/images/itinerary/rouen_harbour_header.jpg')
 cortona = City.create!(city_name:'Cortona', country_name:'Italy', photo_url:'http://dylanbrowndesigns.com/wordpress/wp-content/uploads/2014/06/cortona-panorama.jpg')
-florence = City.create!(city_name:'Florence', country_name:'Italy', photo_url:'http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg')
 nairobi = City.create!(city_name:'Nairobi', country_name:'Kenya', photo_url:'https://www.tuifly.com/images/visuals/header_flugziel_nbo.jpg')
 chiang_mai = City.create!(city_name:'Chiang Mai', country_name:'Thailand', photo_url:'http://www.primarktravelhouse.com/images/thailand-images/amazing-thailand.jpg')
 san_fran = City.create!(city_name:'San Francisco', country_name:'United States', photo_url:'http://mwthotels.com/tollhouse/files/2012/01/area-header-tiburon-sanfrancisco-1024x533.jpg')
+florence = City.create!(city_name:'Florence', country_name:'Italy', photo_url:'http://www.ila-chateau.com/hotel-toscana-firenze-villoresi/wp-content/uploads/florence-header.jpg')
 
 ashlinn = copenhagen.suggestions.create!(name:'Ashlinn', ideas: "1) Go on a Nyhavn boat cruise. 2) eat one of their famous hotdogs!")
 tammy = chiang_mai.suggestions.create!(name:'Tammy', ideas: '1. Bua Tong Water Fall aka Sticky Waterfall-Ssoooo awesome!! A waterfall you can run up!
