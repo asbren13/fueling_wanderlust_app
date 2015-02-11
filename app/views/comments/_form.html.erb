@@ -1,6 +1,14 @@
+<div class="container">
+  <%= form_for [@city, @suggestion, @comment] do |f| %>
+    <div class="form-group">
+      <%= f.label :body, "Enter your comment here:" %>
+    <div class="form-group">
+      <%= f.text_area :body %>
+      </div>
+    <div class="form-group">
+      <%= f.submit "Submit" %>
+      </div>
+    </div>
+  <% end %>
+</div>
 
-<%= form_for [@city, @suggestion, @comment] do |f| %>
-  <%= f.label :body %>
-  <%= f.text_area :body %>
-  <%= f.submit "Submit" %>
-<% end %>

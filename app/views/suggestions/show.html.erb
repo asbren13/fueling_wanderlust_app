@@ -9,14 +9,19 @@
   </ul>
 </div>
 <div class="container">
-  <h1>Suggestion(s) from <%= @suggestion.name %></h1>
-
+  <h1>Suggestion(s) from <%= @suggestion.name %>:</h1>
+  <br>
+  <div class="suggestions">
   <div ><%= @suggestion.ideas %></div>
-
+  <br>
   <h3>All Comments :</h3>
 
   <% @suggestion.comments.each do |comment| %>
-      <h4><%= comment.body %></h4>
-
+      <ul>
+        <li>
+          <%= comment.body %>
+        </li>
+      </ul>
   <% end %>
+  </div>
 </div>

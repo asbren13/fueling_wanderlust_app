@@ -143,14 +143,20 @@ a:active {
   text-align: center;
 }
 .container {
-  text-align: center;
   position: relative;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
 }
 .above-footer {
   text-align: center;
 }
 h2 {
   text-align: center;
+}
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style-position: inside;
 }
