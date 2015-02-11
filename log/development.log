@@ -75866,3 +75866,65 @@ Processing by SuggestionsController#show as HTML
   [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."suggestion_id" = $1  [["suggestion_id", 4]]
   Rendered suggestions/show.html.erb within layouts/application (2.2ms)
 Completed 200 OK in 154ms (Views: 150.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities/7" for ::1 at 2015-02-11 13:53:53 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mSuggestion Load (0.3ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 7]]
+  Rendered cities/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 204ms (Views: 199.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities.7" for ::1 at 2015-02-11 13:53:56 -0500
+Processing by CitiesController#index as 
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT "cities".* FROM "cities"  ORDER BY country_name ASC, city_name ASC[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 168ms (Views: 166.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 13:54:09 -0500
+Processing by WelcomeController#index as HTML
+  [1m[35mCity Load (0.5ms)[0m  SELECT "cities".* FROM "cities"  ORDER BY country_name ASC, city_name ASC
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 146ms (Views: 145.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for ::1 at 2015-02-11 13:54:17 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT "cities".* FROM "cities"  ORDER BY country_name ASC, city_name ASC[0m
+  Rendered cities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/1" for ::1 at 2015-02-11 13:54:19 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSuggestion Load (0.5ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 147ms (Views: 143.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities.1" for ::1 at 2015-02-11 13:54:20 -0500
+Processing by CitiesController#index as 
+  [1m[35mCity Load (0.8ms)[0m  SELECT "cities".* FROM "cities"  ORDER BY country_name ASC, city_name ASC
+  Rendered cities/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 226ms (Views: 224.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities/1" for ::1 at 2015-02-11 13:54:33 -0500
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSuggestion Load (0.4ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."city_id" = $1  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 172ms (Views: 169.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities" for ::1 at 2015-02-11 13:54:35 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.7ms)[0m  [1mSELECT "cities".* FROM "cities"  ORDER BY country_name ASC, city_name ASC[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 159ms (Views: 157.1ms | ActiveRecord: 0.7ms)
