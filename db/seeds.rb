@@ -69,4 +69,4 @@ boston.suggestions.create!(name: 'GA WDI Class', ideas: 'You must experience the
 portland.suggestions.create!(name: 'Pat', ideas: "Check out DiMillo's!", category: 'Food')
 canton.suggestions.create!(name: 'Kelly', ideas: "The Hoot Owl and Ridin' that wave are must-do's while you're in Canton", category: '18+')
 canton.suggestions.create!(name: 'Ashlinn', ideas: "Stop by St. Lawrence University and try a Pub Cookie while you're there. Also stopping by the Hoot Owl is a must-do!", category: 'Combination')
-toluca.suggestions.create!(name: 'Emily', ideas:'There is a volcano called El Nevado de Toluca that you can climb that is really beautiful. There are three lakes at almost the top, but its really cool because its dormant and you can go up pretty far.', category: 'Outdoors')
+toluca.suggestions.create!(name: 'Emily', ideas: "There is a volcano called El Nevado de Toluca that you can climb that is really beautiful. There are three lakes at almost the top, but it's really cool because its dormant and you can go up pretty far.", category: 'Outdoors')
