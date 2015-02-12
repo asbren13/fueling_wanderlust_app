@@ -21,20 +21,5 @@ Models:
 - Comments
   - Body 
 
-Example of How Data from Models Interact:
-City_ID       City Name     Country Name
-1             Cortona       Italy
-2             Chiang Mai    Thailand
-3             Copenhagen    Denmark
-
-Suggestion ID  Suggestion Name  Category        City ID Suggestions:
-1               Bailey            Food             1     Cafe Degli Artisti for a great cappuccino or food!
-2               Tammy             Sightseeing      2     Bua Tong Water Fall aka Sticky Waterfall-So awesome!! 
-3               Ashlinn           Sightseeing      3     Do the Nyhavn boat tour!
-
-Comment ID  Comment Text                                          Suggestion ID
-1           This is a great list. I loved Cafe Degli Artisti!           1
-2           The Doi Suthep Temple was crowded during mid Spring.        2
-3           The Nyhavn boat tour is awesome!                            3
-
-Wireframes: 
+Cities are the parent of Suggestions.
+Suggestions are the parent of Comments.
