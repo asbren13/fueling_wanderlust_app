@@ -12,6 +12,11 @@ galway = City.create!(city_name: 'Galway', country_name: 'Ireland', photo_url: '
 london = City.create!(city_name: 'London', country_name: 'England', photo_url: 'http://www.londonshoeshine.com/wp-content/uploads/2013/06/panoramic_cityscapes4.jpg')
 ottawa = City.create!(city_name: 'Ottawa', country_name: 'Canada', photo_url: 'http://blog.navut.com/wp-content/uploads/2014/11/3794011206_37538c9bf1_b1.jpg')
 taupo = City.create!(city_name: 'Taupo', country_name: 'New Zealand', photo_url: 'http://www.straytravel.com/assets/Uploads/taupo-sunset-header.jpg')
+calgary = City.create!(city_name: 'Calgary', country_name: 'Canada', photo_url: 'http://dsphotographic.com/blog/wp-content/uploads/2011/05/calgary-skyline-hdr-pano.jpg')
+boston = City.create!(city_name: 'Boston, MA', country_name: 'United States', photo_url: 'http://www.worldpropertychannel.com/news-assets/Boston-skyline.jpg')
+portland = City.create!(city_name: 'Portland, ME', country_name: 'United States', photo_url: 'https://thunktank.files.wordpress.com/2008/09/portland-maine-cityscape-skyline-hdr-panorama-cropped-smaller-e1348604112987.jpg')
+canton = City.create!(city_name: 'Canton, NY', country_name: 'United States', photo_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaC3_wpzykV4P_MLgdVxm_hh2s4B9Pc2ngPTowgnw8VWwYEyoYug')
+toluca = City.create!(city_name: 'Toluca', country_name: 'Mexico', photo_url: 'http://th08.deviantart.net/fs71/PRE/f/2012/039/6/2/panorama_del_nevado_de_toluca_by_mowvam-d4p3fyy.jpg')
 
 copenhagen.suggestions.create!(name: 'Ashlinn', ideas:  "1) Go on a Nyhavn boat cruise. 2) Eat one of their famous hotdogs!", category: 'Combination')
 chiang_mai.suggestions.create!(name: 'Tammy', ideas:  '1. Bua Tong Water Fall aka Sticky Waterfall-Soooo awesome!! A waterfall you can run up!
@@ -59,3 +64,9 @@ london.suggestions.create!(name: 'Holly',
   ideas: "Go to O'Neil's in Muswell Hill! It's a lot of fun! You should also make sure to take time to do all of the typical tourist stuff like Buckingham Palace, the London Eye, the Tower of London, etc", category: 'Combination')
 ottawa.suggestions.create!(name: 'Ashlinn', ideas: 'A must-do in the winter is skating on the Rideau Canal! It can be a bit crowded, but it is an awesome experience. Make sure to also checkout Winterlude if you are in the are during late January or early February!', category: 'Outdoors')
 taupo.suggestions.create!(name: 'Anonymous', ideas: 'Visit Lake Taupo and go skydiving while in the area to see some beautiful views!', category:'Outdoors')
+calgary.suggestions.create!(name: 'Tys', ideas: 'Outside of Calgary, you should try to climb the Canadian Rockies!', category: 'Outdoors')
+boston.suggestions.create!(name: 'GA WDI Class', ideas: 'You must experience the wonderful experience of the MBTA at least once. Especially in the winter.', category: 'Entertainment')
+portland.suggestions.create!(name: 'Pat', ideas: "Check out DiMillo's!", category: 'Food')
+canton.suggestions.create!(name: 'Kelly', ideas: "The Hoot Owl and Ridin' that wave are must-do's while you're in Canton", category: '18+')
+canton.suggestions.create!(name: 'Ashlinn', ideas: "Stop by St. Lawrence University and try a Pub Cookie while you're there. Also stopping by the Hoot Owl is a must-do!", category: 'Combination')
+toluca.suggestions.create!(name: 'Emily', ideas:'There is a volcano called El Nevado de Toluca that you can climb that is really beautiful. There are three lakes at almost the top, but its really cool because its dormant and you can go up pretty far.', category: 'Outdoors')
