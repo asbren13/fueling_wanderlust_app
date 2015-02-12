@@ -62,7 +62,7 @@ san_fran.suggestions.create!(name: 'Karly', ideas: 'My absolute favorite place t
 galway.suggestions.create!(name: 'Declan', ideas: "Must do's include: climbing Croagh Patrick, hiking the Cliffs of Moher, kayaking around the Cliffs of Moher, doing a pub crawl, touring the medieval castles in the area, and biking around the Aran Islands", category: 'Combination')
 london.suggestions.create!(name: 'Holly',
   ideas: "Go to O'Neil's in Muswell Hill! It's a lot of fun! You should also make sure to take time to do all of the typical tourist stuff like Buckingham Palace, the London Eye, the Tower of London, etc", category: 'Combination')
-ottawa.suggestions.create!(name: 'Ashlinn', ideas: 'A must-do in the winter is skating on the Rideau Canal! It can be a bit crowded, but it is an awesome experience. Make sure to also checkout Winterlude if you are in the are during late January or early February!', category: 'Outdoors')
+ottawa.suggestions.create!(name: 'Ashlinn', ideas: 'A must-do in the winter is skating on the Rideau Canal! It can be a bit crowded, but it is an awesome experience. Make sure to also check out Winterlude if you are in the area during late January or early February!', category: 'Outdoors')
 taupo.suggestions.create!(name: 'Anonymous', ideas: 'Visit Lake Taupo and go skydiving while in the area to see some beautiful views!', category:'Outdoors')
 calgary.suggestions.create!(name: 'Tys', ideas: 'Outside of Calgary, you should try to climb the Canadian Rockies!', category: 'Outdoors')
 boston.suggestions.create!(name: 'GA WDI Class', ideas: 'You must experience the wonderful experience of the MBTA at least once. Especially in the winter.', category: 'Entertainment')

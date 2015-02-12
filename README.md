@@ -8,3 +8,22 @@ Features:
 - View comments from other travelers for one of the suggestions!
 - Add your input to a suggestion in a comment!
 - See suggestions organized by categories!
+
+Models:
+
+- Cities
+  - City Name
+  - Country Name
+  - Photo URL of Country
+-Suggestions
+  -Name
+  -Ideas/Suggestion
+  -Category
+-Comments
+  -Body
+
+Cities are the parent of Suggestions. Suggestions are the parent of Comments.
+
+Ideal User Experience:
+
+A web app where a user who is traveling can see suggestions about “must-do’s” for a vacation/trip/study abroad/rumspringa experience. When they first arrive to the home page they are given an option to log in or just to start looking up city suggestions. Cities will be in a dropdown menu, but users will have an opportunity (if they are logged in) to suggest/create a city to add to the list. Once a user picks a city, they can see a list of suggestions of things to do or see. If the user likes/dislikes a suggestion, they can add a comment providing more context (maybe add a voting feature?). Users can edit/delete their own comments/suggestions, but cannot edit other comments/suggestions.
