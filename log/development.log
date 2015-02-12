@@ -83586,3 +83586,12 @@ Started GET "/assets/bootstrap-sprockets-3ca152e549e0b8086e1891275d70a987.js?bod
 
 
 Started GET "/assets/application-9b9cb51698675bfa865cb0455a68f103.js?body=1" for ::1 at 2015-02-11 19:58:27 -0500
+
+
+Started GET "/cities/1/suggestions/new" for ::1 at 2015-02-11 20:04:09 -0500
+Processing by SuggestionsController#new as HTML
+  Parameters: {"city_id"=>"1"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered suggestions/_form.html.erb (2.1ms)
+  Rendered suggestions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 115ms (Views: 111.6ms | ActiveRecord: 0.3ms)
