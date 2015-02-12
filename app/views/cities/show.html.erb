@@ -25,7 +25,8 @@
     <div class="category"><%= suggestion.category %></div>
     <div class="suggestion"><%= suggestion.ideas %>
     </div>
-    <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%>
+    <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%> |
+    <div class="comments"><%= suggestion.comments.count %> Comments for this suggestion</div>
   </div>
   <% end %>
 </div>
