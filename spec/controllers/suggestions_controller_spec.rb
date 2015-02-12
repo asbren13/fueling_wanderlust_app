@@ -2,16 +2,20 @@ require 'rails_helper'
 
 RSpec.describe SuggestionsController do
   let(:valid_attributes) do
-    { ideas: 'sucks' }
+    { ideas: 'sucks',
+      category: 'Combination',
+    }
   end
 
   let(:invalid_attributes) do
-    { ideas: nil }
+    { ideas: nil,
+      category: nil
+    }
   end
 
   before(:all) do
     @city = City.create!(city_name: 'Copenhagen', country_name: 'Denmark')
-    @suggestions = @city.suggestions
+    @suggestions = @city.suggestions.order('category ASC')
   end
 
   describe 'GET index' do

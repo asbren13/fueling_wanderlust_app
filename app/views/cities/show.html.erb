@@ -19,9 +19,10 @@
 
 
 <div class="suggestions">
-  <% @city.suggestions.each do |suggestion| %>
+  <% @city.suggestions.order('category ASC').each do |suggestion| %>
   <div>
     <div class="name"> <%= suggestion.name %> </div>
+    <div class="category"><%= suggestion.category %></div>
     <div class="suggestion"><%= suggestion.ideas %>
     </div>
     <%= link_to 'View this suggestion!', city_suggestion_path(@city, suggestion)%>

@@ -9,12 +9,17 @@ RSpec.describe Suggestion do
     it 'is invalid without an idea' do
       expect(Suggestion.create(name: 'Ashlinn')).not_to be_valid
     end
+    it 'is invalid without a category' do
+      expect(Suggestion.create(name: 'Ashlinn', ideas: '1) Go on a Nyhavn boat cruise.
+            2) eat one of their famous hotdogs!' )).not_to be_valid
+    end
     it 'is valid with a name and an idea' do
       expect(
         Suggestion.create(
           name: 'Ashlinn',
           ideas: '1) Go on a Nyhavn boat cruise.
-            2) eat one of their famous hotdogs!')
+            2) eat one of their famous hotdogs!',
+          category: 'Combination')
       ).to be_valid
     end
   end

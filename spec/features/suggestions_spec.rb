@@ -7,6 +7,7 @@ RSpec.feature 'Managing Suggestions' do
       name: 'Ashlinn',
       ideas: '1) Go on a Nyhavn boat cruise.
         2) eat one of their famous hotdogs!',
+       category: 'Combination',
       city: @city
     )
     Suggestion.create!(
@@ -16,6 +17,7 @@ RSpec.feature 'Managing Suggestions' do
         that can add a lot to your understanding of Danish culture.
         The museum is free on Wednesdays,
         like many of the other museums in Copenhagen',
+        category: 'Sightseeing',
       city: @city)
 
     visit "/cities/#{@city.id}/suggestions"
@@ -30,6 +32,7 @@ RSpec.feature 'Managing Suggestions' do
       name: 'Ashlinn',
       ideas: '1) Go on a Nyhavn boat cruise.
         2) eat one of their famous hotdogs!',
+      category: 'Combination',
       city: @city
     )
 
@@ -38,6 +41,8 @@ RSpec.feature 'Managing Suggestions' do
     fill_in 'Name', with: 'Ashlinn'
     fill_in 'Ideas', with: '1) Go on a Nyhavn boat cruise.
       2) eat one of their famous hotdogs!'
+     select :category, text: 'Combination'
+
     click_on 'Submit'
     expect(page).to have_content(/success/i)
   end
@@ -47,6 +52,7 @@ RSpec.feature 'Managing Suggestions' do
       name: 'Ashlinn',
       ideas: '1) Go on a Nyhavn boat cruise.
       2) eat one of their famous hotdogs!',
+      category: 'Combination',
       city: @city
     )
     visit "/cities/#{@city.id}/suggestions/#{@suggestion.id}"

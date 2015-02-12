@@ -10,7 +10,7 @@ RSpec.describe CommentsController do
   end
   before(:all) do
     @city = City.create!(city_name: 'Copenhagen', country_name: 'Denmark')
-    @suggestion = @city.suggestions.create!(ideas: 'sucks')
+    @suggestion = @city.suggestions.create!(ideas: 'sucks', category: 'Combination')
     @suggestion.save
     @comments = @suggestion.comments
   end

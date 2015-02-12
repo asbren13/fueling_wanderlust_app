@@ -3,7 +3,7 @@ class SuggestionsController < ApplicationController
   before_action :set_city
 
   def index
-    @suggestions = @city.suggestions
+    @suggestions = @city.suggestions.order('category ASC')
   end
 
   def new
@@ -32,6 +32,6 @@ class SuggestionsController < ApplicationController
   end
 
   def suggestion_params
-    params.require(:suggestion).permit(:name, :ideas)
+    params.require(:suggestion).permit(:name, :ideas, :category)
   end
 end
